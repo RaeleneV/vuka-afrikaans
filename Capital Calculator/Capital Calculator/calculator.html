@@ -1,0 +1,429 @@
+
+<!doctype html>
+
+<html lang="af">
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Kapitaal Sakrekenaar — Vuka</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../../css/vuka_styles_redesigned.css" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="icon" href="../../images_global/favicon-sun-only.ico" />
+
+    <link rel="manifest" href="manifest.json" />
+
+  </head>
+
+  <body>
+
+    <a class="skip-link" href="#main">Spring na hoofinhoud</a>
+
+<header class="ribbon">
+
+  <div class="container ribbon-inner">
+
+    <a class="logo" href="../../index.html">
+
+      <img class="logo-img" src="../../images_global/vuka-logo-white.png" alt="Vuka-logo" />
+
+    </a>
+
+    <p class="calculator-page-title">Aanvangskapitaal-sakrekenaar</p>
+ <select class="lang-select" aria-label="Kies taal" onchange="if(this.value) window.location.href = this.value;">
+  <option value="" selected>🌐 Afrikaans</option>
+  <option disabled>🌐 isiZulu (binnekort beskikbaar)</option>
+  <option value="https://vuka22.netlify.app">🌐 English</option>
+</select>
+    <a class="btn btn-ghost btn-sm" href="../../index.html">← Gaan terug na Tuisblad</a>
+
+  </div>
+
+</header>
+
+
+    <main id="main">
+
+
+      <section class="hero">
+
+   <h1 id="mealTitle" class="hidden"></h1>
+
+        <p id="feelFree">Pas gerus die bestanddele aan indien nodig.</p>
+
+        <p style="font-size: 11px" id="rates">
+
+          <i
+            >Neem asseblief kennis dat hierdie tariewe gedurende Augustus 2026 van toepassing was en
+
+            met verloop van tyd kan verander. Kontroleer asseblief die inligting om seker te maak
+
+            dat dit steeds akkuraat is.</i
+          >
+
+        </p>
+
+      </section>
+
+      <section class="progress-container">
+
+        <div class="step">
+
+          <span>1</span>
+
+          <p>Kategorie</p>
+
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+
+          <span>2</span>
+
+          <p>Maaltyd/Drankie</p>
+
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step active">
+
+          <span>3</span>
+
+          <p>Sakrekenaar</p>
+
+        </div>
+
+      </section>
+
+      <div class="calculator-container">
+
+        <div class="table-container">
+
+          <table>
+
+            <thead>
+
+              <tr>
+
+                <th class="tooltip">
+
+                  Produk
+
+                  <span class="tooltip-text">
+
+                    Voer die naam van die produk wat jy gaan gebruik in.
+
+                  </span>
+
+                </th>
+
+                <th class="tooltip">
+
+                  Hoeveelheid
+
+                  <span class="tooltip-text">
+
+                    Voer in hoeveel eenhede van die produk jy benodig.
+
+                  </span>
+
+                </th>
+
+                <th class="tooltip">
+
+                  Eenheid
+
+                  <span class="tooltip-text">
+
+                    Voer die eenheid in wat gebruik word om die produk te meet, soos kg,
+
+                    skinkbord(e), l.
+
+                  </span>
+
+                </th>
+
+                <th class="tooltip">
+
+                  Gewig/Volume
+
+                  <span class="tooltip-text">
+
+                    Voer die gewig of volume in wat in een eenheid van die
+
+                    produk vervat is.
+
+                  </span>
+
+                </th>
+
+                <th class="tooltip">
+
+                  Totale Gewig/Volume
+
+                  <span class="tooltip-text">
+
+                    Dit word outomaties bereken deur die hoeveelheid
+
+                    met die gewig/volume te vermenigvuldig.
+
+                  </span>
+
+                </th>
+
+                <th class="tooltip">
+
+                  Prys (R)
+
+                  <span class="tooltip-text">
+
+                    Voer die beraamde prys van een eenheid van die produk in ZAR (R) in.
+
+                  </span>
+
+                </th>
+
+                <th class="tooltip">
+
+                  Totaal
+
+                  <span class="tooltip-text">
+
+                    Dit is die beraamde totale koste vir die hoeveelheid van hierdie
+
+                    produk.
+
+                  </span>
+
+                </th>
+
+                <th>
+
+                  <!-- <span class="tooltip-text">
+
+                                      Klik op die knoppie om hierdie produk uit die lys te verwyder.
+
+                                  </span> -->
+
+                </th>
+
+              </tr>
+
+            </thead>
+
+            <tbody id="ingredientTable"></tbody>
+
+          </table>
+
+        </div>
+
+        <datalist id="unitOptions">
+
+          <option value="ml"></option>
+
+          <option value="l"></option>
+
+          <option value="g"></option>
+
+          <option value="kg"></option>
+
+        </datalist>
+
+        <div class="button-section-add">
+
+          <button id="addProduct" class="btn btn-outline btn-sm">+ Voeg Produk By</button>
+
+          <button id="calculate" class="btn btn-primary">Bereken Kapitaal</button>
+
+        </div>
+
+        <div class="capital-card">
+
+          <h2>Totale Aanvangskapitaal</h2>
+
+          <h1 id="capital">R0.00</h1>
+
+          <p style="font-size: 10px">
+
+            <i
+              >Neem asseblief kennis dat hierdie bedrag moontlik nie die totale koste verteenwoordig wat jy
+
+              sal aangaan nie. Die werklike koste kan hoër of laer wees, afhangende van
+
+              verskeie faktore. Hierdie bedrag word as ’n skatting verskaf om jou
+
+              ’n aanduiding te gee van die moontlike uitgawes wat betrokke is.</i
+            >
+
+          </p>
+
+        </div>
+
+        <div class="button-section">
+
+          <button onclick="history.back()" class="btn btn-outline">← Terug</button>
+
+          <button id="downloadList" class="btn btn-primary">↓ Laai Produklys Af</button>
+
+        </div>
+
+      </div>
+
+      <div id="removeModal" class="modal-overlay">
+
+        <div class="modal">
+
+          <h2>Verwyder Produk</h2>
+
+          <p>Is jy seker jy wil hierdie produk verwyder?</p>
+
+          <div id="removeProductInfo" class="remove-product-info"></div>
+
+          <div class="modal-buttons">
+
+            <button id="confirmRemove" class="btn btn-primary confirm-btn">Ja, Verwyder</button>
+
+            <button id="cancelRemove" class="btn btn-outline cancel-btn">Kanselleer</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div id="negativeModal" class="modal-overlay">
+
+        <div class="modal">
+
+          <h2>Ongeldige Getal</h2>
+
+          <p>Negatiewe getalle word nie toegelaat nie.</p>
+
+          <button id="negativeOk" class="btn btn-primary confirm-btn">OK</button>
+
+        </div>
+
+      </div>
+
+    </main>
+
+    <footer class="site-footer">
+
+      <div class="container">
+
+        <div class="footer-main">
+
+          <!-- VUKA branding -->
+
+          <div class="footer-branding">
+
+            <img
+              class="footer-logo-vuka"
+              src="../../images_global/vuka-logo-white.png"
+              alt="VUKA"
+            />
+
+            <p class="footer-note">
+
+              Gratis vaardighede vir Suid-Afrika se entrepreneurs in die voedselsektor.
+
+            </p>
+
+          </div>
+
+          <!-- Quick links -->
+
+          <div class="footer-column">
+
+            <h3>Vinnige Skakels</h3>
+
+            <div class="footer-links">
+
+              <a href="../../index.html">Tuis</a>
+
+              <a href="../../team.html">Ontmoet die Span</a>
+
+              <a href="https://forms.google.com/" target="_blank" rel="noopener">Resenseer Ons asseblief</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Ubuntu Nexus credit -->
+
+        <div class="footer-bottom">
+
+          <div class="footer-creator">
+
+            <img
+              class="footer-logo-ubuntu"
+              src="../../images_global/UbuntuNexus_logo.jpeg"
+              alt="Ubuntu Nexus"
+            />
+
+            <div>
+
+              <p class="footer-credit-title">Geskep deur Ubuntu Nexus</p>
+
+              <p class="footer-credit-note">Span 22</p>
+
+            </div>
+
+          </div>
+
+          <p class="footer-copyright">© 2026 VUKA. Alle regte voorbehou.</p>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+    <script src="libs/jspdf.umd.min.js"></script>
+
+    <script src="libs/jspdf.plugin.autotable.min.js"></script>
+
+    <script src="data.js"></script>
+
+    <script src="calculator.js"></script>
+
+    <script>
+
+  if ("serviceWorker" in navigator) {
+
+    window.addEventListener("load", () => {
+
+      navigator.serviceWorker.register("../../sw.js").catch((err) => {
+
+        console.warn("Dienswerker-registrasie het misluk:", err);
+
+      });
+
+    });
+
+  }
+
+</script>
+
+  </body>
+
+</html>

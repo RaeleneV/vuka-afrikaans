@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hou Meer van Wat Jy Verdien — Vuka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/vuka_styles_redesigned.css" />
+    <link rel="icon" href="images_global/favicon-sun-only.ico" />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Spring na hoofinhoud</a>
+    <header class="ribbon">
+      <div class="container ribbon-inner">
+        <a class="logo" href="index.html"
+          ><img
+            class="logo-img"
+            src="images_global/vuka-logo-white.png"
+            alt="Vuka-logo"
+        /></a>
+        <nav class="nav-right" id="navRight" aria-label="Primêre navigasie">
+          <ul class="nav-links">
+            <li><a href="index.html#about">Oor ons</a></li>
+            <li><a href="index.html#modules">Modules</a></li>
+            <li><a href="index.html#faq">Gereelde Vrae</a></li>
+          </ul>
+         <select class="lang-select" aria-label="Kies taal" onchange="if(this.value) window.location.href = this.value;">
+  <option value="" selected>🌐 Afrikaans</option>
+  <option disabled>🌐 isiZulu (binnekort beskikbaar)</option>
+  <option value="https://vuka22.netlify.app">🌐 English</option>
+</select>
+        </nav>
+        <button
+          class="burger"
+          id="burgerBtn"
+          aria-label="Maak kieslys oop"
+          aria-expanded="false"
+          aria-controls="navRight"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Broodkrummelnavigasie">
+        <a href="index.html">Tuis</a> /
+        <span class="current">Hou Meer van Wat Jy Verdien</span>
+      </nav>
+    </div>
+
+    <main id="main">
+      <div class="container module-layout">
+        <nav class="topic-nav" aria-label="Module-onderwerpe">
+          <h2>Onderwerpe</h2>
+          <ul>
+            <li>
+              <a class="topic-link" href="#know-your-three-numbers"
+                >Ken Jou Drie Syfers</a
+              >
+            </li>
+            <li>
+              <a class="topic-link" href="#dont-mix-business">Moenie Besigheids- en Persoonlike Geld Meng Nie</a>
+            </li>
+            <li>
+              <a class="topic-link" href="#stop-the-leaks">Stop die Lekke</a>
+            </li>
+            <li>
+              <a class="topic-link" href="#keep-the-proof">Hou Bewys van Elke Rand</a>
+            </li>
+            <li>
+              <a class="topic-link" href="#bank-it-even-without-cipc"
+                >Bankeer Dit, Selfs Sonder CIPC</a
+              >
+            </li>
+            <li>
+              <a class="topic-link" href="#References"
+                >Verwysings</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <article class="module-main">
+          <div class="module-header">
+            <div>
+              <p class="eyebrow">Reis 02</p>
+              <h1>Hou Meer van Wat Jy Verdien</h1>
+            </div>
+            <!-- <a class="btn btn-ghost btn-sm" href="index.html#modules">← Terug</a> -->
+          </div>
+
+          <p class="module-why">
+            "Jy het vandag hard gewerk vir elke rand. So waarheen het die helfte daarvan gegaan teen die tyd dat jy by die huis gekom het?"
+            Hierdie reis gaan daaroor om jou syfers te verstaan, die koste wat jy nie nodig het nie te verminder, bewys te hou van wat jy verdien, en daardie geld op ’n veiliger plek as jou sak te kry.
+          </p>
+
+          <section class="topic-section" id="know-your-three-numbers">
+            <h3>Ken Jou Drie Syfers</h3>
+            <p class="topic-summary">
+              "As iemand jou vra hoeveel jou besigheid verlede maand werklik gemaak het, sou jy met ’n syfer kon antwoord, of net raai?"
+            </p>
+            <div class="topic-body">
+              <p>
+                Elke handelaar moet drie syfers ken: omset, uitgawes en wins. Omset is al die geld wat uit verkope inkom, voordat enige koste afgetrek word.
+                Uitgawes is alles waaraan jy geld spandeer: voorraad, vervoer, verpakking, permitfooie, data en lugtyd. Wins is omset minus uitgawes,
+                en dit is die enigste syfer wat vir jou wys hoeveel jy werklik gemaak het.
+              </p>
+              <p>
+                💡 VINNIGE WENK: Tel aan die einde van elke week al jou "Geld In" en "Geld Uit" bymekaar en trek dit van mekaar af. Dit is jou weeklikse wins, binne minder as vyf minute.
+              </p>
+            </div>
+          </section>
+
+          <section class="topic-section know-how section" id="money-savvy">
+            <div class="challenge-box" id="challenge-box">
+              <p class="eyebrow"> ✅ VINNIGE UITDAGING</p>
+              <h2>Wees Geldslim</h2>
+              <p class="lead">
+                Tel hierdie week al die geld bymekaar wat in jou besigheid ingekom het en al die geld wat uitgegaan het, en bereken jou werklike wins.
+                Voltooi dit en verdien: 💰 "Syferkennis"-kenteken.
+              </p>
+
+              <form id="profit-calculator">
+                <label>
+                  Geld In (Omset) hierdie week:
+                  <input type="number" id="money-in" min="0" step="0.01" placeholder="bv. 1500" />
+                </label>
+                <label>
+                  Geld Uit (Uitgawes) hierdie week:
+                  <input type="number" id="money-out" min="0" step="0.01" placeholder="bv. 900" />
+                </label>
+                <button type="button" id="calc-profit" class="btn btn-primary">Bereken My Wins</button>
+                <div id="profit-result" class="result hidden"></div>
+              </form>
+
+              <div id="badge-section" class="hidden">
+                <div class="badge" id="numbers-badge">
+                  💰 <strong>Syferkennis</strong>-kenteken
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="topic-section" id="dont-mix-business">
+            <h3>Moenie Besigheids- en Persoonlike Geld Meng Nie</h3>
+            <p class="topic-summary">
+              "As jou besigheidsgeld en jou taxigeld in dieselfde sak is, hoe sal jy ooit weet watter een jy spandeer?"
+            </p>
+            <div class="topic-body">
+              <p>
+                Baie handelaars verloor tred met hul wins omdat besigheids- en persoonlike kontant in dieselfde sak of beursie beland.
+                Om dit te voorkom, hou twee of drie aparte houers of rekeninge: een vir die besigheid, een vir persoonlike of huishoudelike uitgawes, en ideaal gesproke
+                een vir noodgevalle. Probeer om vir jouself ’n vaste bedrag te betaal, soos ’n werknemer se salaris, eerder as om geld uit te neem wanneer jy dit nodig het.
+                Sit ook 10% tot 20% van jou weeklikse wins in ’n spaarhouer, stokvel of rekening sodat jy ’n buffer het vir stadiger weke.
+              </p>
+              <p>
+                💡 VINNIGE WENK: Behandel jou eie "salaris" as ’n vaste weeklikse uitgawe, net soos voorraad of huur. Dit beskerm jou wins sodat dit nie ongemerk verdwyn nie.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <div class="challenge-box" id="challenge-box">
+              <p class="eyebrow"> ✅ VINNIGE UITDAGING</p>
+              <h2>Skei Jou Geld</h2>
+              <p>
+                Stel hierdie week drie aparte plekke vir jou geld op, of vind dit: besigheid, persoonlik en noodgevalle.
+                Voltooi dit en verdien: 🐖 "Geskei & Beveilig"-kenteken
+              </p>
+
+              <form id="separate-form">
+                <label>
+                  Besigheidshouer (bv. blikkie, koevert, rekening)
+                  <input type="text" id="business-place" placeholder="bv. Groen blikkie onder die toonbank" />
+                </label>
+                <label>
+                  Persoonlike/huishoudelike houer
+                  <input type="text" id="personal-place" placeholder="bv. Blou beursie by die huis" />
+                </label>
+                <label>
+                  Noodfonds of stokvel
+                  <input type="text" id="emergency-place" placeholder="bv. Postbank-spaarrekening / plaaslike stokvel" />
+                </label>
+                <button type="button" id="save-separate-plan" class="btn btn-primary">Stoor My Plan</button>
+                <div id="separate-result" class="result hidden"></div>
+              </form>
+
+              <div id="badge-separate" class="badge-section hidden">
+                <p>Goed gedoen! Jy het jou drie geldplekke opgestel.</p>
+                <div class="badge">🐖 <strong>Geskei & Beveilig</strong>-kenteken</div>
+              </div>
+            </div>
+          </section>
+
+          <section class="topic-section" id="stop-the-leaks">
+            <h3>Stop die Lekke</h3>
+            <p class="topic-summary">
+              "Jy het nie ’n slegte verkoopsweek gehad nie. So hoekom het jy met minder wins as verlede maand geëindig?"
+            </p>
+            <div class="topic-body">
+              <p>
+                Baie klein besighede verloor geld nie omdat hulle nie genoeg verkoop nie, maar omdat hul koste te hoog is of swak bestuur word.
+                Vergelyk pryse by ten minste twee verskaffers voordat jy jou gereeld tot een verbind. Verminder vermorsing, veral met vars kos,
+                deur slegs te koop wat jy realisties kan verkoop voordat dit bederf. Vermy mashonisas en ongeregistreerde geldleners heeltemal:
+                hul rentekoerse kan veroorsaak dat ’n lening van R1 000 in R2 000 of meer se skuld verander. Kyk elke maand deur jou notaboek en vra
+                of daar ’n goedkoper opsie van dieselfde gehalte vir jou grootste uitgawe-items is.
+              </p>
+              <p>
+                💡 VINNIGE WENK: Lojaliteit aan een verskaffer is goed, maar nie as dit jou elke week stilweg geld kos nie. Dit is die ongemaklike gesprek werd om rond te vra.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <div class="challenge-box" id="challenge-box">
+              <p class="eyebrow"> ✅ VINNIGE UITDAGING</p>
+              <h2>Maak die Lekke Toe</h2>
+              <p>
+                Identifiseer jou grootste weeklikse uitgawe, buiten voorraad, en dink aan een manier om dit te verminder.
+                Voltooi dit en verdien: 🔍 "Kostesnyer"-kenteken
+              </p>
+
+              <form id="leaks-form">
+                <label>
+                  Jou grootste weeklikse uitgawe buiten voorraad
+                  <input type="text" id="big-expense" placeholder="bv. vervoer, data, verpakking" />
+                </label>
+                <label>
+                  Benaderde bedrag per week (R)
+                  <input type="number" id="expense-amount" min="0" step="0.01" placeholder="bv. 250" />
+                </label>
+                <label>
+                  Een idee om hierdie koste te verminder
+                  <textarea id="cut-idea" rows="3" placeholder="bv. vergelyk twee verskaffers, deel vervoer, koop in grootmaat"></textarea>
+                </label>
+                <button type="button" id="save-leaks-plan" class="btn btn-primary">Stoor My Kostebesparingsplan</button>
+                <div id="leaks-result" class="result hidden"></div>
+              </form>
+
+              <div id="badge-leaks" class="badge-section hidden">
+                <p>Goeie werk. Jy het ’n lek geïdentifiseer en ’n manier gevind om dit reg te stel.</p>
+                <div class="badge">🔍 <strong>Kostesnyer</strong>-kenteken</div>
+              </div>
+            </div>
+          </section>
+
+          <section class="topic-section" id="keep-the-proof">
+            <h3>Hou Bewys van Elke Rand</h3>
+            <p class="topic-summary">
+              "’n Befondser vra om jou handelsgeskiedenis te sien. Wat sou jy op hierdie oomblik vir hulle wys?"
+            </p>
+            <div class="topic-body">
+              <p>
+                Nasionaal hou die meeste ongeregistreerde Suid-Afrikaanse besighede glad nie finansiële rekords nie. Sonder rekords kan jy nie jou inkomste aan ’n bank bewys nie,
+                kan jy nie vir befondsing aansoek doen nie, en kan jy nie werklik sien of jou besigheid geld maak nie. Die oplossing is eenvoudig: een notaboek, verdeel in "Geld In" en "Geld Uit."
+                Skryf elke transaksie neer op die dag wat dit gebeur, selfs die kleintjies. Hou elke kwitansie van verskaffers of die munisipaliteit in een plastiekhouer of lêer,
+                gesorteer volgens maand. Tel alles weekliks en maandeliks bymekaar. Dit word jou eenvoudige finansiële rekord en jou bewys van inkomste wanneer jy gereed is om vir ondersteuning aansoek te doen.
+              </p>
+              <p>
+                💡 VINNIGE WENK: As jy ’n slimfoon het, kan ’n gratis toepassing soos Yoco of ’n eenvoudige notas-toepassing hierdie rekords ook digitaal rugsteun, bo en behalwe jou notaboek.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <div class="challenge-box" id="challenge-box">
+              <p class="eyebrow"> ✅ VINNIGE UITDAGING</p>
+              <h2>Hou Rekord van Jou Inkomste</h2>
+              <p>
+                Begin vandag se bladsy. Skryf nou jou eerste twee transaksies van die dag neer.
+                Voltooi dit en verdien: 📒 "Bewysbewaarder"-kenteken.
+              </p>
+
+              <form id="proof-form">
+                <div class="transaction-row">
+                  <label>
+                    Beskrywing van transaksie 1
+                    <input type="text" class="tx-desc" placeholder="bv. tamaties gekoop" />
+                  </label>
+                  <label>
+                    Bedrag (R)
+                    <input type="number" class="tx-amount" min="0" step="0.01" placeholder="bv. 80" />
+                  </label>
+                  <label>
+                    Tipe
+                    <select class="tx-type">
+                      <option value="in">Geld In</option>
+                      <option value="out">Geld Uit</option>
+                    </select>
+                  </label>
+                </div>
+
+                <div class="transaction-row">
+                  <label>
+                    Beskrywing van transaksie 2
+                    <input type="text" class="tx-desc" placeholder="bv. taxigeld betaal" />
+                  </label>
+                  <label>
+                    Bedrag (R)
+                    <input type="number" class="tx-amount" min="0" step="0.01" placeholder="bv. 30" />
+                  </label>
+                  <label>
+                    Tipe
+                    <select class="tx-type">
+                      <option value="in">Geld In</option>
+                      <option value="out">Geld Uit</option>
+                    </select>
+                  </label>
+                </div>
+
+                <button type="button" id="save-proof-entries" class="btn btn-primary">Stoor My Eerste Twee Transaksies</button>
+                <div id="proof-result" class="result hidden"></div>
+              </form>
+
+              <div id="badge-proof" class="badge-section hidden">
+                <p>Perfek. Jy het met jou bewys van inkomste begin.</p>
+                <div class="badge">📒 <strong>Bewysbewaarder</strong>-kenteken</div>
+              </div>
+            </div>
+          </section>
+
+          <section class="topic-section" id="bank-it-even-without-cipc">
+            <h3>Bankeer Dit, Selfs Sonder CIPC</h3>
+            <p class="topic-summary">
+              "Al jou wins lê in ’n plastieksak onder jou bed. Wat gebeur as dit môre wegraak?"
+            </p>
+            <div class="topic-body">
+              <p>
+                Jy hoef nie by CIPC te registreer om as ’n alleeneienaar ’n besigheidsbankrekening te open nie. Verskeie Suid-Afrikaanse banke bied rekeninge aan wat spesifiek vir informele,
+                ongeregistreerde handelaars ontwerp is. Die Capitec Entrepreneur Account werk met ’n bestaande Capitec GlobalOne-persoonlike rekening en jou Suid-Afrikaanse ID,
+                sonder ’n minimum deposito om dit te open. Die TymeBank Everyday Business Account werk vanaf ’n bestaande TymeBank "Good Friends"-persoonlike rekening,
+                is gratis om te open en word in die toepassing onder My Profile > My Details > Business Benefits opgestel. Deur jou kontant gereeld, selfs weekliks, te deponeer,
+                bou jy ’n transaksiegeskiedenis op. Dit is presies wat jy later vir befondsing of ’n kaartmasjien sal nodig hê.
+              </p>
+              <p>
+                💡 VINNIGE WENK: Om kontant by jou of by die huis te hou, is een van die grootste diefstalrisiko’s waarvoor ’n handelaar te staan kom. Selfs ’n klein gereelde deposito verminder daardie risiko.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <div class="challenge-box" id="challenge-box">
+              <p class="eyebrow"> ✅ VINNIGE UITDAGING</p>
+              <h2>Bankeer & Bou</h2>
+              <p>
+                Kies Capitec of TymeBank en vind uit presies wat jy hierdie week nodig het om ’n rekening te open.
+                Voltooi dit en verdien: 🏦 "Gebank & Bou"-kenteken
+              </p>
+
+              <form id="bank-form">
+                <label>
+                  Watter bank oorweeg jy?
+                  <select id="bank-choice">
+                    <option value="">Kies een</option>
+                    <option value="capitec">Capitec Entrepreneur Account</option>
+                    <option value="tyme">TymeBank Everyday Business Account</option>
+                  </select>
+                </label>
+
+                <div id="bank-steps" class="hidden">
+                  <p><strong>Wat jy gewoonlik nodig sal hê:</strong></p>
+                  <ul id="bank-requirements"></ul>
+
+                  <label>
+                    Wat sal jy hierdie week doen? (merk alles wat van toepassing is)
+                    <div><input type="checkbox" class="bank-task" value="visit"> Besoek ’n tak / agent</div>
+                    <div><input type="checkbox" class="bank-task" value="call"> Bel die bank / kyk in die toepassing</div>
+                    <div><input type="checkbox" class="bank-task" value="docs"> Kry jou ID en enige ander dokumente bymekaar</div>
+                  </label>
+
+                  <button type="button" id="save-bank-plan" class="btn btn-primary">Stoor My Bankplan</button>
+                  <div id="bank-result" class="result hidden"></div>
+                </div>
+              </form>
+
+              <div id="badge-bank" class="badge-section hidden">
+                <p>Goed gedoen. Jy het ’n duidelike stap geneem om jou wins veilig te bank.</p>
+                <div class="badge">🏦 <strong>Gebank & Bou</strong>-kenteken</div>
+              </div>
+            </div>
+          </section>
+
+          <section class="topic-section" id="References">
+            <h3>Verwysings</h3>
+            <div class="faq-list">
+
+              <details class="faq-item">
+                <summary style="color:#319966;">Bronne vir Feitekontrole: Wetgewing & Regulasies</summary>
+                <p class="faq-answer">
+                  <p>
+                    Elke wetlike feit in Reise 3, 4 en 10 is gebaseer op huidige
+                    Suid-Afrikaanse wetgewing en riglyne van reguleerders:
+                  </p>
+
+                  <ul>
+                    <li>
+                      Regulasies wat Algemene Higiënevereistes vir Voedselpersele Beheer (R638 van 2018), ingevolge die Wet op Voedingsmiddels, Skoonheidsmiddels en Ontsmettingsmiddels 54 van 1972 — afgedwing deur munisipale Omgewingsgesondheidsdepartemente.
+                    </li>
+                    <li>
+                      Regulasies betreffende die Etikettering en Advertering van Voedingsmiddels (R146), ingevolge die Wet op Voedingsmiddels, Skoonheidsmiddels en Ontsmettingsmiddels 54 van 1972 — Departement van Gesondheid.
+                    </li>
+                    <li>Wet op Besighede 71 van 1991 — gov.za.</li>
+                    <li>
+                      Maatskappywet 71 van 2008 en die Kommissie vir Maatskappye en Intellektuele Eiendom (CIPC) — maatskappyregistrasie, omskakeling van besigheidstruktuur en handelsmerkregistrasie — cipc.co.za.
+                    </li>
+                    <li>
+                      Nasionale Reguleerder vir Verpligte Spesifikasies (NRCS), Voedsel- en Geassosieerde Nywerhede-afdeling — ingemaakte, gerookte en vakuumverpakte produkte — nrcs.org.za.
+                    </li>
+                    <li>
+                      Suid-Afrikaanse Inkomstediens (SARS), Klein Besighede – Belastingbetalers, Belastingnakomingstatus-stelsel en Begroting 2026 Gereelde Vrae (BTW- en Omsetbelasting-drempelveranderings wat vanaf 1 April 2026 in werking tree) — sars.gov.za.
+                    </li>
+                    <li>
+                      Wet op Werkloosheidsversekering 63 van 2001 en Wet op Werkloosheidsversekeringsbydraes 4 van 2002 — Departement van Indiensneming en Arbeid — labour.gov.za.
+                    </li>
+                    <li>
+                      Wet op Vergoeding vir Beroepsbeserings en -siektes 130 van 1993 (COIDA) — Vergoedingsfonds, Departement van Indiensneming en Arbeid — labour.gov.za.
+                    </li>
+                    <li>
+                      Wet op Basiese Diensvoorwaardes 75 van 1997 — Departement van Indiensneming en Arbeid — labour.gov.za.
+                    </li>
+                    <li>
+                      Wet op Nasionale Omgewingsbestuur: Afval 59 van 2008 en Regulasies oor Uitgebreide Produsenteverantwoordelikheid (Goewermentskennisgewing R.1184, 2020) — Departement van Bosbou, Visserye en die Omgewing — dffe.gov.za.
+                    </li>
+                    <li>
+                      Wet op Breëbasis Swart Ekonomiese Bemagtiging 53 van 2003, en die Kodes van Goeie Praktyk oor B-BBEE (drempels vir Vrygestelde Mikro-ondernemings) — dtic.gov.za.
+                    </li>
+                    <li>
+                      Wet op die Beskerming van Persoonlike Inligting 4 van 2013 (POPIA) — Inligtingsreguleerder Suid-Afrika — inforegulator.org.za.
+                    </li>
+                    <li>
+                      Wet op Verbruikersbeskerming 68 van 2008 — bepalings oor aanlyn- en afstandverkope — gov.za.
+                    </li>
+                    <li>
+                      Afrika Kontinentale Vryhandelsgebied (AfCFTA) — Suid-Afrikaanse implementeringsriglyne — dtic.gov.za.
+                    </li>
+                  </ul>
+
+                  <p>
+                    <i>
+                      Nota: Munisipale fooie, drempels en aansoekprosesse verskil van gebied tot gebied en word van tyd tot tyd deur die regering en reguleerders hersien. Verifieer huidige vereistes direk by die betrokke munisipaliteit of reguleerder voordat finale syfers in die toepassing gepubliseer word.
+                    </i>
+                  </p>
+                </p>
+              </details>
+
+              <details class="faq-item">
+                <summary style="color:#319966;">Bronne & Verdere Leeswerk: Besigheidspraktyk, Bemarking & Finansiële Geletterdheid</summary>
+                <p class="faq-answer">
+                  <p>
+                    Feite oor handelsmerkontwikkeling en digitale bemarking in Reise 6 en 7 is gebaseer op die volgende:
+                  </p>
+
+                  <ul>
+                    <li>
+                      Cloudfusion (2025). 7 Essential Reasons Why Branding Is Important for Business. Cloudfusion.co.za.
+                    </li>
+                    <li>
+                      Dandu, R. (2015). What Is Branding and Why Is It Important for Your Business? Brandingmag.
+                    </li>
+                    <li>
+                      Mercer, S. (2026). What to Post When You Have Nothing to Post:
+                      10 Content Ideas for Summerville Businesses. What's Up Summerville.
+                    </li>
+                    <li>
+                      Why food photography is important for your food business.
+                      candyfoxstudio.com.
+                    </li>
+                    <li>
+                      Yolisa Motha (2021). A Guide to Branding a Small Business.
+                      iKhokha.
+                    </li>
+                  </ul>
+
+                  <p>
+                    <i>
+                      Statistieke oor Suid-Afrikaanse kleinsakekommunikasie, tydsbestuur, professionaliteit, netwerkvorming, rekordhouding en bankdienste (Reise 1, 2, 8 en 9) is gebaseer op nasionale navorsing oor kleinsakeondernemings. Verifieer huidige syfers teen die oorspronklike bronne voordat finale getalle in die toepassing gepubliseer word.
+                    </i>
+                  </p>
+
+                  <p>
+                    Feite oor gereedheid vir groei, uitleenrisiko, befondsing en voorraadbestuur in Reise 1, 2, 5 en 9 is gebaseer op die volgende:
+                  </p>
+
+                  <ul>
+                    <li>
+                      National Debt Advisors (2021). Stay away from unregistered money-lenders. nationaldebtadvisors.co.za.
+                    </li>
+                    <li>
+                      Startup Mag (2025). Scaling Signals: Ten Signs Your Small Business Is Ready to Grow. startupmag.co.za; Lula (2025). 5 Signs Your Business is Ready for Growth Capital. lula.co.za.
+                    </li>
+                    <li>
+                      RegInsights (2024). Small Business Funding.
+                      regenesys.net/reginsights.
+                    </li>
+                    <li>
+                      Graduates24 (n.d.). NYDA Grant Programme Small Business Funding in South Africa. graduates24.com.
+                    </li>
+                    <li>
+                      Okhantu (2025). SEDFA Funding 2026: Requirements, Amounts & How to Apply. okhantu.co.za.
+                    </li>
+                    <li>
+                      Ready Accounting (2026). Inventory management tips for cost savings and efficiency. readyaccounting.co.za.
+                    </li>
+                    <li>
+                      Xtraspace (2024). Small Business Inventory Management in SA:
+                      10 Top Tips. xtraspace.co.za.
+                    </li>
+                  </ul>
+                </p>
+              </details>
+
+              <details class="faq-item">
+                <summary style="color:#319966;">Bronne & Verdere Leeswerk: Die VUCA-konsep</summary>
+                <p class="faq-answer">
+                  <p>
+                    Die missiestelling op die voorblad is gebaseer op die volgende:
+                  </p>
+
+                  <ul>
+                    <li>
+                      Bennett, N., & Lemoine, G. J. (2014). What VUCA Really Means
+                      for You. Harvard Business Review, 92(1/2), 27.
+                    </li>
+                  </ul>
+                </p>
+              </details>
+
+            </div>
+          </section>
+
+          <div class="module-footer-actions">
+            <a
+              class="btn btn-outline btn-sm module-download"
+              href="pdf/VukaJourney02.pdf"
+              target="_blank"
+              rel="noopener"
+            >
+              ⬇ Laai / Druk Module Af
+            </a>
+
+            <p class="module-download-note">
+              Maak ’n drukbare PDF oop. Stoor dit vir vanlyn gebruik of druk dit.
+
+            </p>
+          </div>
+
+          <div class="module-pager">
+            <a class="btn btn-outline" href="Journey1.html">
+              <span>
+                <span class="pager-label">← Vorige reis 01</span>Is Jou Besigheid Gereed om te Groei?
+              </span>
+            </a>
+
+            <a class="btn btn-primary" href="Journey3.html">
+              <span>
+                <span class="pager-label">Volgende reis 03 →</span>Maak Jou Besigheid Amptelik
+              </span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </main>
+
+     <footer class="site-footer">
+      <div class="container">
+        <div class="footer-main">
+          <!-- VUKA branding -->
+          <div class="footer-branding">
+            <img
+              class="footer-logo-vuka"
+              src="images_global/vuka-logo-white.png"
+              alt="VUKA"
+            />
+            <p class="footer-note">
+              Gratis vaardighede vir Suid-Afrika se entrepreneurs in die voedselsektor.
+            </p>
+          </div>
+
+          <!-- Quick links -->
+          <div class="footer-column">
+            <h3>Vinnige Skakels</h3>
+
+            <div class="footer-links">
+              <a href="pdf/VukaJourneys1-10.pdf">⬇ Laai PDF-weergawe af</a>
+              <a href="team.html">Ontmoet die Span</a>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeWoTinUkNsyFvYVqJk79LPJY2lL1nYslnXRa6ewYi_eWehkw/viewform?usp=publish-editor"
+                target="_blank"
+                rel="noopener"
+              >
+                Resenseer Ons asseblief
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ubuntu Nexus credit -->
+        <div class="footer-bottom">
+          <div class="footer-creator">
+            <img
+              class="footer-logo-ubuntu"
+              src="images_global/UbuntuNexus_logo.jpeg"
+              alt="Ubuntu Nexus"
+            />
+            <div>
+              <p class="footer-credit-title">Geskep deur Ubuntu Nexus</p>
+              <p class="footer-credit-note">Team 22</p>
+            </div>
+          </div>
+
+          <p class="footer-copyright">© 2026 VUKA. Alle regte voorbehou.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="libs/jspdf.umd.min.js"></script>
+    <script src="libs/jspdf.plugin.autotable.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("sw.js").catch((err) => {
+            console.warn("Service worker registration failed:", err);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
+

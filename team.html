@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="af">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ontmoet die Span — Vuka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/vuka_styles_redesigned.css" />
+    <link rel="icon" href="images_global/favicon-sun-only.ico" />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Spring na hoofinhoud</a>
+    <header class="ribbon">
+      <div class="container ribbon-inner">
+        <a class="logo" href="index.html"
+          ><img
+            class="logo-img"
+            src="images_global/vuka-logo-white.png"
+            alt="Vuka-logo"
+        /></a>
+        <nav class="nav-right" id="navRight" aria-label="Primêre navigasie">
+          <ul class="nav-links">
+            <li><a href="index.html#about">Oor ons</a></li>
+            <li><a href="index.html#modules">Modules</a></li>
+            <li><a href="index.html#faq">Gereelde Vrae</a></li>
+          </ul>
+          <select
+            class="lang-select"
+            aria-label="Kies taal"
+            onchange="if (this.value) window.location.href = this.value;"
+          >
+            <option value="" selected>🌐 Afrikaans</option>
+            <option disabled>🌐 isiZulu (binnekort beskikbaar)</option>
+            <option value="https://vuka22.netlify.app">🌐 English</option>
+          </select>
+        </nav>
+        <button
+          class="burger"
+          id="burgerBtn"
+          aria-label="Maak kieslys oop"
+          aria-expanded="false"
+          aria-controls="navRight"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="index.html">Tuis</a>
+        <span class="current">Ontmoet die Span</span>
+      </nav>
+    </div>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container">
+          <p class="eyebrow">Ubuntu Nexus · Team 22</p>
+          <h1>Ontmoet die Span</h1>
+          <p class="lead">
+            Ons is <b>Ubuntu Nexus</b>, ’n span van 6 studente wat Vuka gebou
+            het om Suid-Afrika se informele entrepreneurs in die voedselsektor
+            van gratis, praktiese besigheidsvaardighede te voorsien.
+          </p>
+        </div>
+      </section>
+
+      <section class="modules-section">
+        <div class="container">
+          <div class="module-grid team-grid">
+            <div class="module-card team-card">
+              <div class="team-photo-placeholder">
+                <img src="images_global/Rae.jpg" alt="Raelene Dookkoo" />
+              </div>
+              <h3>Raelene Dookkoo</h3>
+              <p class="team-role">Spanleier</p>
+              <p>
+                Hou toesig oor die hele projek, verseker dat die span op koers
+                bly, bestuur konflikte, koördineer spanaktiwiteite, en verseker
+                dat projekvereistes en sperdatums nagekom word.
+              </p>
+            </div>
+
+            <div class="module-card team-card">
+              <div class="team-photo-placeholder">
+                <img src="images_global/Karabo.jpg" alt="Karabo Mhlupheki" />
+              </div>
+              <h3>Karabo Mhlupheki</h3>
+              <p class="team-role">Navorsingsbestuurder</p>
+              <p>
+                Lei die Navorsingspan, koördineer navorsingstake, en hou toesig
+                oor die ontwikkeling van relevante en akkurate inhoud vir die
+                projek.
+              </p>
+            </div>
+
+            <div class="module-card team-card">
+              <div class="team-photo-placeholder">
+                <img src="images_global/Johnny.jpg" alt="Johnny Mabaso" />
+              </div>
+              <h3>Johnny Mabaso</h3>
+              <p class="team-role">Navorser</p>
+              <p>
+                Doen navorsing en dra relevante inligting en kurrikuluminhoud by
+                om die algehele projek te ondersteun.
+              </p>
+            </div>
+
+            <div class="module-card team-card">
+              <div class="team-photo-placeholder">
+                <img src="images_global/Sivu.jpg" alt="Sivuyisiwe Ngalo" />
+              </div>
+              <h3>Sivuyisiwe Ngalo</h3>
+              <p class="team-role">Kommunikasie- en Belanghebbendebestuurder</p>
+              <p>
+                Bestuur kommunikasie met eksterne belanghebbendes, versamel en
+                kommunikeer terugvoer, en bied die projek professioneel aan
+                belanghebbendes aan en verduidelik dit aan hulle.
+              </p>
+            </div>
+
+            <div class="module-card team-card">
+              <div class="team-photo-placeholder">
+                <img src="images_global/Lisa.jpg" alt="Lisakhanya Kilani" />
+              </div>
+              <h3>Lisakhanya Kilani</h3>
+              <p class="team-role">Navorser</p>
+              <p>
+                Doen navorsing en dra relevante inligting en inhoud by om die
+                projek en sy doelwitte te ondersteun.
+              </p>
+            </div>
+
+            <div class="module-card team-card">
+              <div class="team-photo-placeholder">
+                <img src="images_global/Una.JPG" alt="Unathi Mokgothu" />
+              </div>
+              <h3>Unathi Mokgothu</h3>
+              <p class="team-role">Tegniese Bestuurder</p>
+              <p>
+                Lei die Tegniese Departement, koördineer ontwikkelingstake,
+                monitor sperdatums, en hou toesig oor die frontend- en
+                backend-ontwikkeling van die projek.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="container">
+          <div class="module-footer-actions" style="justify-content: center">
+            <a class="btn btn-primary" href="index.html">← Terug na Tuis</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-main">
+          <!-- VUKA branding -->
+          <div class="footer-branding">
+            <img
+              class="footer-logo-vuka"
+              src="images_global/vuka-logo-white.png"
+              alt="VUKA"
+            />
+            <p class="footer-note">
+              Gratis vaardighede vir Suid-Afrika se entrepreneurs in die
+              voedselsektor.
+            </p>
+          </div>
+
+          <!-- Quick links -->
+          <div class="footer-column">
+            <h3>Vinnige Skakels</h3>
+
+            <div class="footer-links">
+              <a href="pdf/VukaLeerpaadjies1-10.pdf">⬇ Laai PDF-weergawe af</a>
+              <a href="team.html">Ontmoet die Span</a>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeWoTinUkNsyFvYVqJk79LPJY2lL1nYslnXRa6ewYi_eWehkw/viewform?usp=publish-editor"
+                target="_blank"
+                rel="noopener"
+              >
+                Resenseer Ons asseblief
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ubuntu Nexus credit -->
+        <div class="footer-bottom">
+          <div class="footer-creator">
+            <img
+              class="footer-logo-ubuntu"
+              src="images_global/UbuntuNexus_logo.jpeg"
+              alt="Ubuntu Nexus"
+            />
+            <div>
+              <p class="footer-credit-title">Geskep deur Ubuntu Nexus</p>
+              <p class="footer-credit-note">Team 22</p>
+            </div>
+          </div>
+
+          <p class="footer-copyright">© 2026 VUKA. Alle regte voorbehou.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

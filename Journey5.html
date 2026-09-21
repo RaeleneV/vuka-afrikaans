@@ -1,0 +1,724 @@
+<!doctype html>
+<html lang="af">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loop Nooit Weer Sonder Voorraad Nie — Vuka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/vuka_styles_redesigned.css" />
+    <link rel="icon" href="images_global/favicon-sun-only.ico" />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+  <a class="skip-link" href="#main">Spring na hoofinhoud</a>
+    <header class="ribbon">
+      <div class="container ribbon-inner">
+        <a class="logo" href="index.html"
+          ><img
+            class="logo-img"
+            src="images_global/vuka-logo-white.png"
+            alt="Vuka-logo"
+        /></a>
+        <nav class="nav-right" id="navRight" aria-label="Primêre navigasie">
+          <ul class="nav-links">
+            <li><a href="index.html#about">Oor ons</a></li>
+            <li><a href="index.html#modules">Modules</a></li>
+            <li><a href="index.html#faq">Gereelde Vrae</a></li>
+          </ul>
+         <select class="lang-select" aria-label="Kies taal" onchange="if(this.value) window.location.href = this.value;">
+  <option value="" selected>🌐 Afrikaans</option>
+  <option disabled>🌐 isiZulu (binnekort beskikbaar)</option>
+  <option value="https://vuka22.netlify.app">🌐 English</option>
+</select>
+        </nav>
+        <button
+          class="burger"
+          id="burgerBtn"
+          aria-label="Maak kieslys oop"
+          aria-expanded="false"
+          aria-controls="navRight"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Broodkrummelnavigasie">
+        <a href="index.html">Tuis</a> /
+        <span class="current">Loop Nooit Weer Sonder Voorraad Nie</span>
+      </nav>
+    </div>
+
+    <main id="main">
+      <div class="container module-layout">
+        <nav class="topic-nav" aria-label="Onderwerpe van die module">
+          <h2>Onderwerpe</h2>
+          <ul>
+            <li>
+              <a class="topic-link" href="#FirstInFirstOut"
+                >Eerste In, Eerste Uit</a
+              >
+            </li>
+            <li>
+              <a class="topic-link" href="#SetYourParLevels"
+                >Stel U Minimum Voorraadvlakke</a
+              >
+            </li>
+            <li>
+              <a class="topic-link" href="#TrackWhatRunsOut"
+                >Hou Rekord van Wat Opraak</a
+              >
+            </li>
+            <li>
+              <a class="topic-link" href="#OrderSmartNotByGuesswork"
+                >Bestel Slim, Nie op Raaiwerk Nie</a
+              >
+            </li>
+            <li>
+              <a class="topic-link" href="#References"
+                >Verwysings</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <article class="module-main">
+          <div class="module-header">
+            <div>
+              <p class="eyebrow">Module 05</p>
+              <h1>Loop Nooit Weer Sonder Voorraad Nie</h1>
+            </div>
+            <!-- <a class="btn btn-ghost btn-sm" href="index.html#modules">← Back</a> -->
+          </div>
+          <p class="module-why">
+            "Wanneer 'n gewilde item middel in die dag opraak, stuur dit
+            daardie kliënt reguit na 'n mededinger. Om te veel te bestel, hou
+            dieselfde risiko in, net andersom." Die meeste klein Suid-Afrikaanse
+            voedselbesighede bestel steeds voorraad op grond van raaiwerk.
+            Hieronder is 'n eenvoudige stelsel wat geen sagteware of tegniese
+            kundigheid vereis nie, net 'n bietjie daaglikse dissipline.
+          </p>
+
+          <section class="topic-section" id="FirstInFirstOut">
+            <h3>Eerste In, Eerste Uit</h3>
+            <p class="topic-summary">
+              "Gister se hoender is nog agter in die yskas. Watter bondel
+              gebruik u vandag werklik om mee te kook?"
+            </p>
+            <div class="topic-body">
+              <p>
+                Ken u "eerste in, eerste uit"-reël (FIFO). Gebruik of verkoop
+                altyd eers u oudste voorraad, en plaas nuwe aflewerings agter
+                bestaande voorraad, nie voor dit nie. Dit is veral belangrik
+                vir bederfbare kos soos vleis, suiwel en groente.<br /><br />
+                💡 VINNIGE WENK Maak FIFO fisies: skuif nuwe voorraad letterlik
+                na die agterkant van die rak of yskas elke keer as 'n
+                aflewering aankom.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <div class="challenge-box">
+              <p class="eyebrow"> ✅ VINNIGE UITDAGING</p>
+              <h2>Plaas U Oudste Voorraad Eerste</h2>
+              <p class="lead">
+                Gaan een yskas, rak, koelboks of bergingsarea na waar u voorraad
+                hou. Bepaal of ouer voorraad voor nuwer voorraad geplaas is.
+                Voltooi dit en verdien: 📦 "FIFO-gefokus"-kenteken.
+              </p>
+
+              <form id="fifoCheckForm">
+                <table class="requirement-table requirement-table-fifo">
+                  <thead>
+                    <tr><th>Voorraaditem nagegaan</th><th>Oudste voorraaddatum of -beskrywing</th><th>Is die oudste voorraad heel voor?</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><input type="text" class="fifo-item-input" placeholder="bv. Hoender" /></td>
+                      <td><input type="text" class="fifo-date-input" placeholder="bv. Maandag afgelewer" /></td>
+                      <td><select class="fifo-front-select"><option value="">–</option><option value="Yes">Ja</option><option value="No">Nee</option></select></td>
+                    </tr>
+                    <tr>
+                      <td><input type="text" class="fifo-item-input" /></td>
+                      <td><input type="text" class="fifo-date-input" /></td>
+                      <td><select class="fifo-front-select"><option value="">–</option><option value="Yes">Ja</option><option value="No">Nee</option></select></td>
+                    </tr>
+                    <tr>
+                      <td><input type="text" class="fifo-item-input" /></td>
+                      <td><input type="text" class="fifo-date-input" /></td>
+                      <td><select class="fifo-front-select"><option value="">–</option><option value="Yes">Ja</option><option value="No">Nee</option></select></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <div class="form-field">
+                  <label for="fifoAction">As u "Nee" vir enige item gekies het, watter stappe het u gedoen? ("Ek het die nuwer voorraad agter die ouer voorraad geskuif sodat die oudste voorraad eerste gebruik word.")</label>
+                  <textarea id="fifoAction" rows="2" placeholder="bv. Ek het vandag se hoenderaflewering agter gister se hoender geskuif sodat gister se voorraad eerste gaar gemaak word."></textarea>
+                </div>
+
+                <button type="button" id="saveFifoCheck" class="btn btn-primary">Stoor My Kontrole</button>
+                <div id="fifoCheckResult" class="result hidden"></div>
+              </form>
+
+              <div id="fifoCheckBadgeSection" class="badge-section hidden">
+                <div class="badge">📦 <strong>FIFO-gefokus</strong>-kenteken</div>
+              </div>
+            </div>
+          </section>
+
+          <section class="topic-section" id="SetYourParLevels">
+            <h3>Stel U Minimum Voorraadvlakke</h3>
+            <p class="topic-summary">
+              "Hoeveel kilogram mieliemeel moet u oor hê voordat u begin
+              bekommerd raak?"
+            </p>
+            <div class="topic-body">
+              <p>
+                Stel 'n eenvoudige "minimum voorraadvlak" vir u beste
+                verkoopitems. Besluit, uit ervaring, wat die minimum hoeveelheid
+                van elke item is wat u moet hê voordat u weer moet bestel,
+                byvoorbeeld: "as ek minder as 5 kg mieliemeel oor het, moet ek
+                aanvul voor my volgende handelsdag." <br /><br />
+                💡 VINNIGE WENK U minimum voorraadvlak hoef nie wetenskaplik te
+                wees nie. U eie ervaring van hoe "min voorraad" voel, is 'n
+                heeltemal goeie beginpunt.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <div class="challenge-box">
+              <p class="eyebrow"> ✅ VINNIGE UITDAGING</p>
+              <h2>Weet Wanneer om Weer te Bestel</h2>
+              <p class="lead">
+                Kies tot drie items wat vinnig verkoop of noodsaaklik is vir
+                handel. Stel die minimum hoeveelheid wat u nodig het voordat u
+                weer bestel. Voltooi dit en verdien: 📏 "Voorraadvlak-kenner"-kenteken
+              </p>
+
+              <details class="faq-item example-answer" style="margin-bottom: 20px;">
+                <summary style="color: #319966">Sien 'n voorbeeld</summary>
+                <div class="faq-answer">
+                  <table class="example-table">
+                    <thead>
+                      <tr><th>Item</th><th>Eenheid</th><th>Minimum vlak</th><th>Herbestelpunt</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>Mieliemeel</td><td>Kilogram</td><td>5 kg</td><td>"Wanneer ek minder as 5 kg het."</td></tr>
+                      <tr><td>Kookolie</td><td>Bottels</td><td>2 bottels</td><td>"Wanneer ek minder as 2 bottels het."</td></tr>
+                      <tr><td>Vetkoekmeel</td><td>Kilogram</td><td>3 kg</td><td>"Wanneer ek minder as 3 kg het."</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </details>
+
+              <form id="parLevelForm">
+                <table class="requirement-table requirement-table-par">
+                  <thead>
+                    <tr><th>Beste verkoop- of noodsaaklike item</th><th>Eenheid gebruik</th><th>My minimum vlak</th><th>Wanneer ek weer sal bestel</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><input type="text" class="par-item-input" placeholder="bv. Mieliemeel" /></td>
+                      <td>
+                        <select class="par-unit-select">
+                          <option value="">–</option>
+                          <option value="kg">kg</option>
+                          <option value="packets">pakkies</option>
+                          <option value="bottles">bottels</option>
+                          <option value="units">eenhede</option>
+                        </select>
+                      </td>
+                      <td><input type="text" class="par-level-input" placeholder="bv. 5" /></td>
+                      <td><input type="text" class="par-reorder-input" placeholder='bv. "Wanneer ek minder as 5 kg het."' /></td>
+                    </tr>
+                    <tr>
+                      <td><input type="text" class="par-item-input" /></td>
+                      <td>
+                        <select class="par-unit-select">
+                          <option value="">–</option>
+                          <option value="kg">kg</option>
+                          <option value="packets">pakkies</option>
+                          <option value="bottles">bottels</option>
+                          <option value="units">eenhede</option>
+                        </select>
+                      </td>
+                      <td><input type="text" class="par-level-input" /></td>
+                      <td><input type="text" class="par-reorder-input" /></td>
+                    </tr>
+                    <tr>
+                      <td><input type="text" class="par-item-input" /></td>
+                      <td>
+                        <select class="par-unit-select">
+                          <option value="">–</option>
+                          <option value="kg">kg</option>
+                          <option value="packets">pakkies</option>
+                          <option value="bottles">bottels</option>
+                          <option value="units">eenhede</option>
+                        </select>
+                      </td>
+                      <td><input type="text" class="par-level-input" /></td>
+                      <td><input type="text" class="par-reorder-input" /></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <button type="button" id="saveParLevel" class="btn btn-primary">Stoor My Minimum Vlakke</button>
+                <div id="parLevelResult" class="result hidden"></div>
+              </form>
+
+              <div id="parLevelBadgeSection" class="badge-section hidden">
+                <div class="badge">📏 <strong>Voorraadvlak-kenner</strong>-kenteken</div>
+              </div>
+            </div>
+          </section>
+
+          <section class="topic-section" id="TrackWhatRunsOut">
+            <h3>Hou Rekord van Wat Opraak</h3>
+            <p class="topic-summary">
+              "U het weer teen 11:00 van vetkoek uitverkoop. Is dit toeval, of
+              'n patroon?"
+            </p>
+            <div class="topic-body">
+              <p>
+                Notaboekroetine. Skryf neer waarvan u uitverkoop het, en
+                wanneer. As u agterkom dat u deurgaans teen die middag van 'n
+                item uitverkoop, is dit u teken om u bestelling vir daardie item
+                te verhoog.<br /><br />
+                💡 VINNIGE WENK 'n Patroon word eers sigbaar sodra dit
+                neergeskryf is. Twee of drie uitverkope wat op dieselfde
+                notaboekbladsy aangeteken is, vertel u veel meer as geheue
+                alleen.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <div class="challenge-box">
+              <p class="eyebrow"> ✅ VINNIGE UITDAGING</p>
+              <h2>Skryf Neer Wat Opraak</h2>
+              <p class="lead">
+                Teken aan die einde van vandag se handel enigiets aan wat
+                uitverkoop het en ongeveer wanneer dit gebeur het. Voltooi dit
+                en verdien: 📝 "Patroonspeurder"-kenteken
+              </p>
+
+              <form id="sellOutForm">
+                <div class="radio-row">
+                  <label><input type="radio" name="anySoldOut" id="soldOutYes" value="yes" /> Iets het vandag uitverkoop</label>
+                  <label><input type="radio" name="anySoldOut" id="soldOutNo" value="no" /> Niks het vandag uitverkoop nie</label>
+                </div>
+
+                <div id="sellOutLogBlock" class="hidden">
+                  <table class="requirement-table requirement-table-sellout">
+                    <thead>
+                      <tr><th>Datum</th><th>Item wat uitverkoop het</th><th>Benaderde tyd</th><th>Kon ek meer verkoop het?</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><input type="date" class="sellout-date-input" /></td>
+                        <td><input type="text" class="sellout-item-input" placeholder="bv. Vetkoek" /></td>
+                        <td><input type="time" class="sellout-time-input" /></td>
+                        <td><select class="sellout-more-select"><option value="">–</option><option value="Yes">Ja</option><option value="No">Nee</option></select></td>
+                      </tr>
+                      <tr>
+                        <td><input type="date" class="sellout-date-input" /></td>
+                        <td><input type="text" class="sellout-item-input" /></td>
+                        <td><input type="time" class="sellout-time-input" /></td>
+                        <td><select class="sellout-more-select"><option value="">–</option><option value="Yes">Ja</option><option value="No">Nee</option></select></td>
+                      </tr>
+                      <tr>
+                        <td><input type="date" class="sellout-date-input" /></td>
+                        <td><input type="text" class="sellout-item-input" /></td>
+                        <td><input type="time" class="sellout-time-input" /></td>
+                        <td><select class="sellout-more-select"><option value="">–</option><option value="Yes">Ja</option><option value="No">Nee</option></select></td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <div class="form-field">
+                    <label for="sellOutChange">Wat ek volgende keer sal verander</label>
+                    <textarea id="sellOutChange" rows="2" placeholder="bv. Berei in die oggend meer vetkoekbeslag voor."></textarea>
+                  </div>
+                </div>
+
+                <div class="form-field">
+                  <label for="patternReflection">Nadat u dit vir etlike handelsdae aangeteken het, watter item blyk die meeste of vroegste uit te verkoop?</label>
+                  <input type="text" id="patternReflection" placeholder="bv. Vetkoek, gewoonlik teen 11:00" />
+                </div>
+
+                <button type="button" id="saveSellOutLog" class="btn btn-primary">Stoor My Rekord</button>
+                <div id="sellOutResult" class="result hidden"></div>
+              </form>
+
+              <div id="sellOutBadgeSection" class="badge-section hidden">
+                <div class="badge">📝 <strong>Patroonspeurder</strong>-kenteken</div>
+              </div>
+            </div>
+          </section>
+
+          <section class="topic-section" id="OrderSmartNotByGuesswork">
+            <h3>Bestel Slim, Nie op Raaiwerk Nie</h3>
+            <p class="topic-summary">
+              "U groente bederf voordat u dit verkoop, maar u raak nooit sonder
+              verpakking nie. Wat sê dit vir u oor hoe u bestel?"
+            </p>
+            <div class="topic-body">
+              <p>
+                Pas u bestellings aan by u handelspatroon. As sekere items
+                gereeld bederf, bestel kleiner hoeveelhede meer gereeld vir
+                daardie items (vars groente, vleis), terwyl u effens groter
+                hoeveelhede minder gereeld bestel vir items wat langer hou
+                (droëgoed, verpakking, weggooibare items). Bou ook betroubare
+                verskafferverhoudings: 'n verskaffer wat u ken, sal u dikwels
+                voorkeur gee wanneer voorraad skaars is, of u vooraf waarsku
+                oor prysveranderings.<br /><br />
+                💡 VINNIGE WENK 'n Gesprek van vyf minute met u verskaffer oor u
+                gewone bestelling kan u 'n onbeplande rit, of 'n onbeplande
+                tekort, bespaar.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <div class="challenge-box">
+              <p class="eyebrow"> ✅ VINNIGE UITDAGING</p>
+              <h2>Bestel Volgens Hoe Lank Goed Hou</h2>
+              <p class="lead">
+                Kies een item wat vinnig bederf en een item wat lank hou. Skep
+                'n bestelplan wat by elke item pas. Voltooi dit en verdien: 🔄
+                "Slim Voorraadhouer"-kenteken.
+              </p>
+
+              <details class="faq-item example-answer" style="margin-bottom: 20px;">
+                <summary style="color: #319966">Sien 'n voorbeeld</summary>
+                <div class="faq-answer">
+                  <table class="example-table">
+                    <thead>
+                      <tr><th>Tipe</th><th>Item</th><th>Hoe lank dit hou</th><th>Huidige gewoonte</th><th>Slimmer plan</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>Bederfbaar</td><td>Tamaties</td><td>'n Paar dae</td><td>Koop een keer per week 'n groot hoeveelheid</td><td>Koop twee keer per week kleiner hoeveelhede om bederf te verminder</td></tr>
+                      <tr><td>Droëgoed</td><td>Wegneemhouers</td><td>Etlike weke</td><td>Koop eers wanneer amper klaar</td><td>Bestel 'n groter hoeveelheid voordat voorraad laag raak</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </details>
+
+              <form id="orderPlanForm">
+                <table class="requirement-table requirement-table-order">
+                  <thead>
+                    <tr><th>Tipe voorraad</th><th>Item</th><th>Hoe lank dit hou</th><th>Huidige gewoonte</th><th>Slimmer plan</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Bederfbare item</td>
+                      <td><input type="text" id="perishableItem" /></td>
+                      <td><input type="text" id="perishableLasts" /></td>
+                      <td><input type="text" id="perishableCurrent" /></td>
+                      <td><input type="text" id="perishablePlan" /></td>
+                    </tr>
+                    <tr>
+                      <td>Droëgoed of verpakking</td>
+                      <td><input type="text" id="dryItem" /></td>
+                      <td><input type="text" id="dryLasts" /></td>
+                      <td><input type="text" id="dryCurrent" /></td>
+                      <td><input type="text" id="dryPlan" /></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <div class="form-field">
+                  <label for="supplierItemName">Item om te noem wanneer u by u verskaffer navraag doen</label>
+                  <input type="text" id="supplierItemName" placeholder="bv. kookolie" />
+                </div>
+                <p class="small" style="margin-bottom: 18px;">
+                  Vraag aan verskaffer: "Kan u my vooraf laat weet as <span id="supplierQuestionPreview">[item]</span> gaan opraak of as die prys waarskynlik gaan styg?"
+                </p>
+
+                <button type="button" id="saveOrderPlan" class="btn btn-primary">Stoor My Bestelplan</button>
+                <div id="orderPlanResult" class="result hidden"></div>
+              </form>
+
+              <div id="orderPlanBadgeSection" class="badge-section hidden">
+                <div class="badge">🔄 <strong>Slim Voorraadhouer</strong>-kenteken</div>
+              </div>
+            </div>
+          </section>
+
+ <section class="topic-section" id="References">
+            <h3>Verwysings</h3>
+            <div class="faq-list">
+            <details class="faq-item" >
+              <summary style="color:#319966;">Bronne vir Feitekontrole: Wetgewing & Regulasies</summary>
+              <p class="faq-answer">
+                <p>
+                Elke wetlike feit in Reise 3, 4 en 10 is gebaseer op huidige Suid-Afrikaanse wetgewing en riglyne van reguleerders:
+              </p>
+              <ul>
+               <li>
+  Regulasies wat Algemene Higiënevereistes vir Voedselpersele Beheer
+  (R638 van 2018), ingevolge die Wet op Voedingsmiddels, Skoonheidsmiddels en
+  Ontsmettingsmiddels 54 van 1972 — afgedwing deur munisipale
+  Omgewingsgesondheidsdepartemente.
+</li>
+<li>
+  Regulasies betreffende die Etikettering en Advertering van
+  Voedingsmiddels (R146), ingevolge die Wet op Voedingsmiddels, Skoonheidsmiddels en
+  Ontsmettingsmiddels 54 van 1972 — Departement van Gesondheid.
+</li>
+<li>Wet op Besighede 71 van 1991 — gov.za.</li>
+<li>
+  Maatskappywet 71 van 2008 en die Kommissie vir Maatskappye en Intellektuele
+  Eiendom (CIPC) — maatskappyregistrasie, omskakeling van besigheidstruktuur
+  en handelsmerkregistrasie — cipc.co.za.
+</li>
+<li>
+  Nasionale Reguleerder vir Verpligte Spesifikasies (NRCS), Voedsel- en
+  Geassosieerde Nywerhede-afdeling — ingemaakte, gerookte en
+  vakuumverpakte produkte — nrcs.org.za.
+</li>
+<li>
+  Suid-Afrikaanse Inkomstediens (SARS), Klein Besighede – Belastingbetalers,
+  Belastingnakomingstatus-stelsel en Begroting 2026 Gereelde Vrae (BTW- en
+  Omsetbelasting-drempelveranderings wat vanaf 1 April 2026 in werking tree) — sars.gov.za.
+</li>
+<li>
+  Wet op Werkloosheidsversekering 63 van 2001 en Wet op Werkloosheidsversekeringsbydraes
+  4 van 2002 — Departement van Indiensneming en Arbeid — labour.gov.za.
+</li>
+<li>
+  Wet op Vergoeding vir Beroepsbeserings en -siektes 130 van
+  1993 (COIDA) — Vergoedingsfonds, Departement van Indiensneming en Arbeid —
+  labour.gov.za.
+</li>
+<li>
+  Wet op Basiese Diensvoorwaardes 75 van 1997 — Departement van
+  Indiensneming en Arbeid.
+</li>
+<li>
+  Wet op Nasionale Omgewingsbestuur: Afval 59 van 2008 en Regulasies oor
+  Uitgebreide Produsenteverantwoordelikheid (Goewermentskennisgewing R.1184, 2020)
+  — Departement van Bosbou, Visserye en die Omgewing — dffe.gov.za.
+</li>
+<li>
+  Wet op Breëbasis Swart Ekonomiese Bemagtiging 53 van 2003, en die
+  Kodes van Goeie Praktyk oor B-BBEE (drempels vir Vrygestelde Mikro-ondernemings)
+  — dtic.gov.za.
+</li>
+<li>
+  Wet op die Beskerming van Persoonlike Inligting 4 van 2013 (POPIA) —
+  Inligtingsreguleerder Suid-Afrika — inforegulator.org.za.
+</li>
+<li>
+  Wet op Verbruikersbeskerming 68 van 2008 — bepalings oor aanlyn- en
+  afstandverkope — gov.za.
+</li>
+<li>
+  Afrika Kontinentale Vryhandelsge
+</li>
+              </ul>
+              <p>
+                <i> **Nota:** Munisipale fooie, drempels en aansoekprosesse verskil van gebied tot gebied en word van tyd tot tyd deur die regering en reguleerders hersien. Verifieer huidige vereistes direk by die betrokke munisipaliteit of reguleerder voordat finale syfers in die toepassing gepubliseer word.
+</i
+                >
+              </p>
+              </p>
+            </details>
+              <details class="faq-item">
+              <summary style="color:#319966;">Bronne & Verdere Leeswerk: Besigheidspraktyk, Bemarking & Finansiële Geletterdheid</summary>
+              <p class="faq-answer">
+                 <p>
+                Feite oor handelsmerkontwikkeling en digitale bemarking in Reise 6 en 7 is gebaseer op die volgende:
+              </p>
+              <ul>
+                <li>
+                  Cloudfusion (2025). 7 Essential Reasons Why Branding Is
+                  Important for Business. Cloudfusion.co.za.
+                </li>
+                <li>
+                  Dandu, R. (2015). What Is Branding and Why Is It Important for
+                  Your Business? Brandingmag.
+                </li>
+                <li>
+                  Mercer, S. (2026). What to Post When You Have Nothing to Post:
+                  10 Content Ideas for Summerville Businesses. What's Up
+                  Summerville.
+                </li>
+                <li>
+                  Why food photography is important for your food business.
+                  candyfoxstudio.com.
+                </li>
+                <li>
+                  Yolisa Motha (2021). A Guide to Branding a Small Business.
+                  iKhokha.
+                </li>
+              </ul>
+              <p>
+                <i
+                  >Statistieke oor Suid-Afrikaanse kleinsakekommunikasie, tydsbestuur, professionaliteit, netwerkvorming, rekordhouding en bankdienste (Reise 1, 2, 8 en 9) is gebaseer op nasionale navorsing oor kleinsakeondernemings. Verifieer huidige syfers teen die oorspronklike bronne voordat finale getalle in die toepassing gepubliseer word.
+</i
+                >
+              </p>
+
+              <p>
+                Feite oor gereedheid vir groei, uitleenrisiko, befondsing en voorraadbestuur in Reise 1, 2, 5 en 9 is gebaseer op die volgende:
+
+              </p>
+              <ul>
+                <li>
+                  National Debt Advisors (2021). Stay away from unregistered
+                  money-lenders. nationaldebtadvisors.co.za.
+                </li>
+                <li>
+                  Startup Mag (2025). Scaling Signals: Ten Signs Your Small
+                  Business Is Ready to Grow. startupmag.co.za; Lula (2025). 5
+                  Signs Your Business is Ready for Growth Capital. lula.co.za.
+                </li>
+                <li>
+                  RegInsights (2024). Small Business Funding.
+                  regenesys.net/reginsights.
+                </li>
+                <li>
+                  Graduates24 (n.d.). NYDA Grant Programme Small Business
+                  Funding in South Africa. graduates24.com.
+                </li>
+                <li>
+                  Okhantu (2025). SEDFA Funding 2026: Requirements, Amounts &
+                  How to Apply. okhantu.co.za.
+                </li>
+                <li>
+                  Ready Accounting (2026). Inventory management tips for cost
+                  savings and efficiency. readyaccounting.co.za.
+                </li>
+                <li>
+                  Xtraspace (2024). Small Business Inventory Management in SA:
+                  10 Top Tips. xtraspace.co.za.
+                </li>
+              </ul>
+              </p>
+              </details>
+              <details class="faq-item">
+              <summary style="color:#319966;">Bronne & Verdere Leeswerk: Die VUCA-konsep</summary>
+              <p class="faq-answer">
+                <p>
+                Die missiestelling op die voorblad is gebaseer op die volgende:
+              </p>
+              <ul>
+                <li>
+                  Bennett, N., & Lemoine, G. J. (2014). What VUCA Really Means
+                  for You. Harvard Business Review, 92(1/2), 27.
+                </li>
+              </ul>
+              </p>
+            </details>
+            </div>
+            
+           
+          </section>
+
+          <div class="module-footer-actions">
+            <a
+              class="btn btn-outline btn-sm module-download"
+              href="pdf/VukaJourney05.pdf"
+              target="_blank"
+              rel="noopener"
+            >
+              ⬇ Laai Module Af / Druk
+            </a>
+
+            <p class="module-download-note">
+              Maak 'n drukbare PDF oop. Stoor dit vir aflyngebruik of druk dit uit.
+            </p>
+          </div>
+
+          <div class="module-pager">
+            <a class="btn btn-outline" href="Journey4.html">
+              <span>
+                <span class="pager-label">← Vorige reis 04</span>Kliënte Moet U Kos Kan Vertrou
+              </span>
+            </a>
+            <a class="btn btn-primary" href="Journey6.html">
+              <span>
+                <span class="pager-label">Volgende reis 06 →</span>Laat U Foon Kliënte na U Bring
+              </span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </main>
+
+     <footer class="site-footer">
+      <div class="container">
+        <div class="footer-main">
+          <!-- VUKA branding -->
+          <div class="footer-branding">
+            <img
+              class="footer-logo-vuka"
+              src="images_global/vuka-logo-white.png"
+              alt="VUKA"
+            />
+            <p class="footer-note">
+              Gratis vaardighede vir Suid-Afrika se entrepreneurs in die voedselsektor.
+            </p>
+          </div>
+
+          <!-- Quick links -->
+          <div class="footer-column">
+            <h3>Vinnige Skakels</h3>
+
+            <div class="footer-links">
+              <a href="pdf/VukaJourneys1-10.pdf">⬇ Laai PDF-weergawe af</a>
+              <a href="team.html">Ontmoet die Span</a>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeWoTinUkNsyFvYVqJk79LPJY2lL1nYslnXRa6ewYi_eWehkw/viewform?usp=publish-editor"
+                target="_blank"
+                rel="noopener"
+              >
+                Resenseer Ons asseblief
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ubuntu Nexus credit -->
+        <div class="footer-bottom">
+          <div class="footer-creator">
+            <img
+              class="footer-logo-ubuntu"
+              src="images_global/UbuntuNexus_logo.jpeg"
+              alt="Ubuntu Nexus"
+            />
+            <div>
+              <p class="footer-credit-title">Geskep deur Ubuntu Nexus</p>
+              <p class="footer-credit-note">Team 22</p>
+            </div>
+          </div>
+
+          <p class="footer-copyright">© 2026 VUKA. Alle regte voorbehou.</p>
+        </div>
+      </div>
+    </footer>
+
+<script src="libs/jspdf.umd.min.js"></script>
+    <script src="libs/jspdf.plugin.autotable.min.js"></script>
+    <script src="js/main.js"></script>
+  
+  <script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("sw.js").catch((err) => {
+        console.warn("Service worker registration failed:", err);
+      });
+    });
+  }
+</script>
+  </body>
+</html>
