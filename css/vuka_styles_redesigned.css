@@ -2806,3 +2806,273 @@ td {
         overflow-wrap: anywhere;
     }
 }
+
+/* ==========================================================================
+   FINAL MOBILE RESPONSIVENESS FIXES
+   ========================================================================== */
+
+/* Prevent grid/flex children from forcing their parent wider */
+.hero-grid > *,
+.about-grid > *,
+.calculator-card > *,
+.success-card > *,
+.footer-main > *,
+.footer-bottom > *,
+.module-layout > * {
+  min-width: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Mobile — general
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 640px) {
+
+  /* Keep the page within the viewport */
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: calc(100% - 32px);
+    max-width: 100%;
+  }
+
+  /* ------------------------------------------------------------------------
+     Navigation
+     ------------------------------------------------------------------------ */
+
+  .ribbon-inner {
+    gap: 12px;
+  }
+
+  .logo-img {
+    height: 52px;
+    max-width: 140px;
+  }
+
+  /* ------------------------------------------------------------------------
+     Hero
+     ------------------------------------------------------------------------ */
+
+  .hero-grid {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .hero h1 {
+    font-size: 2.25rem;
+    overflow-wrap: break-word;
+  }
+
+  .hero p.lead {
+    max-width: 100%;
+  }
+
+  /* Stack hero buttons properly */
+  .hero-actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    flex: 1 1 100%;
+    white-space: normal;
+    text-align: center;
+    overflow-wrap: anywhere;
+  }
+
+  /* ------------------------------------------------------------------------
+     Hero statistics
+     ------------------------------------------------------------------------ */
+
+  .hero-stats {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .hero-stat {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .hero-stat strong,
+  .hero-stat span {
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  /* ------------------------------------------------------------------------
+     Module cards
+     ------------------------------------------------------------------------ */
+
+  .module-card {
+    min-width: 0;
+  }
+
+  .module-card h3,
+  .module-card p {
+    overflow-wrap: anywhere;
+  }
+
+  /* ------------------------------------------------------------------------
+     Calculator
+     ------------------------------------------------------------------------ */
+
+  .calculator-card {
+    width: 100%;
+    min-width: 0;
+    padding: 20px;
+  }
+
+  .calc-preview {
+    width: 100%;
+    min-width: 0;
+    padding: 14px;
+  }
+
+  /*
+     Force the calculator table columns to actually shrink.
+     minmax(0, ...) is important here.
+  */
+  .preview-row {
+    width: 100%;
+    min-width: 0;
+    grid-template-columns:
+      minmax(0, 1.35fr)
+      minmax(0, 0.4fr)
+      minmax(0, 0.65fr)
+      minmax(0, 0.9fr);
+    gap: 5px;
+    padding: 8px 6px;
+  }
+
+  .preview-row span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .preview-header span {
+    overflow-wrap: anywhere;
+  }
+
+  .preview-heading {
+    min-width: 0;
+  }
+
+  .preview-heading span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .calc-total {
+    min-width: 0;
+    align-items: flex-start;
+  }
+
+  .calc-total span:first-child {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .calc-total strong {
+    flex-shrink: 0;
+    font-size: 1.15rem;
+  }
+
+  /* ------------------------------------------------------------------------
+     FAQ
+     ------------------------------------------------------------------------ */
+
+  .faq-item summary {
+    min-width: 0;
+    gap: 12px;
+  }
+
+  .faq-item summary {
+    overflow-wrap: anywhere;
+  }
+
+  /* ------------------------------------------------------------------------
+     Success story
+     ------------------------------------------------------------------------ */
+
+  .success-card {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .success-content,
+  .success-placeholder {
+    min-width: 0;
+  }
+
+  .success-placeholder strong,
+  .success-placeholder small {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  /* ------------------------------------------------------------------------
+     Footer
+     ------------------------------------------------------------------------ */
+
+  .footer-branding {
+    min-width: 0;
+  }
+
+  .footer-note {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .footer-links a {
+    overflow-wrap: anywhere;
+  }
+
+  /* ------------------------------------------------------------------------
+     Tables
+     ------------------------------------------------------------------------ */
+
+  .example-table,
+  .requirement-table {
+    width: 100%;
+    max-width: 100%;
+    table-layout: fixed;
+  }
+
+  .example-table th,
+  .example-table td,
+  .requirement-table th,
+  .requirement-table td {
+    min-width: 0;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  /* ------------------------------------------------------------------------
+     Forms
+     ------------------------------------------------------------------------ */
+
+  .challenge-box,
+  .checklist-card,
+  .module-main {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .challenge-box input,
+  .challenge-box select,
+  .challenge-box textarea,
+  .form-field input,
+  .form-field select,
+  .form-field textarea {
+    max-width: 100%;
+    min-width: 0;
+  }
+}
