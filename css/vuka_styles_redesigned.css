@@ -422,14 +422,14 @@ html {
 
 .hero-stat:nth-child(4) strong,
 .hero-stat:nth-child(5) strong {
-  font-size: 1.0 rem;
+  font-size: 1rem;
 }
 
 .hero-stat strong {
   display: block;
   margin-bottom: 4px;
   font-family: var(--font-display);
-  font-size: 1 rem;
+  font-size: 1rem;
   line-height: 1.25;
   color: var(--lime);
 }
@@ -703,9 +703,24 @@ html {
 }
 
 /* Every row */
-.preview-row {
+/*.preview-row {
   display: grid;
   grid-template-columns: 1.5fr 0.45fr 0.7fr 1fr;
+  gap: 8px;
+  align-items: center;
+  padding: 9px 10px;
+  border-bottom: 1px solid var(--grey-light);
+  color: var(--grey);
+  font-size: 0.7rem;
+}*/
+
+.preview-row {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.5fr)
+    minmax(0, 0.45fr)
+    minmax(0, 0.7fr)
+    minmax(0, 1fr);
   gap: 8px;
   align-items: center;
   padding: 9px 10px;
@@ -809,12 +824,20 @@ html {
     padding: 16px;
   }
 
-  .preview-row {
+  /*.preview-row {
     grid-template-columns: 1.35fr 0.4fr 0.65fr 0.9fr;
     gap: 5px;
     padding: 8px 7px;
     font-size: 0.62rem;
   }
+  */
+.preview-row {
+  grid-template-columns:
+    minmax(0, 1.35fr)
+    minmax(0, 0.4fr)
+    minmax(0, 0.65fr)
+    minmax(0, 0.9fr);
+}
 
   .preview-header {
     font-size: 0.57rem;
@@ -1555,7 +1578,7 @@ html {
   }
 
   .calc-total strong {
-    font-size: 2rem;
+    font-size: 1.15rem;
   }
 
   .footer-inner {
@@ -3075,4 +3098,55 @@ td {
     max-width: 100%;
     min-width: 0;
   }
+
+   /* ------------------------------------------------------------------------
+     checklists
+       ------------------------------------------------------------------------ */
+       
+  .checklist-section .checklist-intro h2 {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    max-width: 100%;
+    width: 100%;
+    min-width: 0;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+  .challenge-box h2{
+    font-size: 1.2rem;
+    line-height: 1.2;
+    max-width: 100%;
+    width: 100%;
+    min-width: 0;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+  .module-header h1{
+    font-size: 2rem;
+  }
+
+  .reflection-section h2{
+    font-size: 1.2rem;
+    line-height: 1.2;
+    max-width: 100%;
+    width: 100%;
+    min-width: 0;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+  .badge-section .badge{
+    font-size: 0.75rem;
+    line-height: 1.2;
+    max-width: 100%;
+    width: 100%;
+    min-width: 0;
+    overflow-wrap:break-word;
+    word-break: normal;
+  }
+
+ 
 }
+

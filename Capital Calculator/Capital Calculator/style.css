@@ -519,6 +519,8 @@ input{
     margin-top: 20px;
 }
 
+
+
 #downloadList {
     background: var(--blue);
     color: white;
@@ -800,4 +802,22 @@ input{
 
 .card p {
   font-size: 0.9rem;
+}
+
+.burger {
+  display: none;
+  padding: 8px;
+  border: 0;
+  background: transparent;
+}
+
+.burger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  margin: 5px 0;
+  background: var(--white);
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
 }
