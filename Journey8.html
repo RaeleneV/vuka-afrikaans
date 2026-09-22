@@ -16,7 +16,6 @@
   </head>
   <body>
     <a class="skip-link" href="#main">Spring na hoofinhoud</a>
-
     <header class="ribbon">
       <div class="container ribbon-inner">
         <a class="logo" href="index.html"
@@ -25,16 +24,16 @@
             src="images_global/vuka-logo-white.png"
             alt="Vuka-logo"
         /></a>
-        <nav class="nav-right" id="navRight" aria-label="Primêr">
+        <nav class="nav-right" id="navRight" aria-label="Primêre navigasie">
           <ul class="nav-links">
-            <li><a href="index.html#about">Oor Ons</a></li>
+            <li><a href="index.html#about">Oor Vuka</a></li>
             <li><a href="index.html#modules">Modules</a></li>
-            <li><a href="index.html#faq">Vrae</a></li>
+            <li><a href="index.html#faq">Gereelde Vrae</a></li>
           </ul>
-          <select class="lang-select" aria-label="Kies taal">
-            <option selected>🌐 Afrikaans</option>
+          <select class="lang-select" aria-label="Kies taal" onchange="if(this.value) window.location.href = this.value;">
+            <option value="" selected>🌐 Afrikaans</option>
             <option disabled>🌐 isiZulu (binnekort beskikbaar)</option>
-            <option disabled>🌐 English</option>
+            <option disabled>🌐 English</option> <!--value="https://vuka22.netlify.app"-->
           </select>
         </nav>
         <button
@@ -50,7 +49,7 @@
     </header>
 
     <div class="container">
-      <nav class="breadcrumbs" aria-label="Breadkrummels">
+      <nav class="breadcrumbs" aria-label="Broodkrummelnavigasie">
         <a href="index.html">Tuis</a> /
         <span class="current">Werk Slimmer</span>
       </nav>
@@ -58,12 +57,12 @@
 
     <main id="main">
       <div class="container module-layout">
-        <nav class="topic-nav" aria-label="Module-onderwerpe">
+        <nav class="topic-nav" aria-label="Onderwerpe van die module">
           <h2>Onderwerpe</h2>
           <ul>
             <li>
               <a class="topic-link" href="#talk-to-customers-and-suppliers"
-                >Praat op die Regte Manier met Kliënte en Verskaffers</a
+                >Praat op die Regte Manier met Klante en Verskaffers</a
               >
             </li>
             <li>
@@ -91,7 +90,7 @@
                 >Aanvaar Kaartbetalings met Yoco</a
               >
             </li>
-             <li>
+            <li>
               <a class="topic-link" href="#References"
                 >Verwysings</a
               >
@@ -103,45 +102,28 @@
           <div class="module-header">
             <div>
               <p class="eyebrow">Reis 08</p>
-              <h1>Wat Is Jou Volgende Stap?</h1>
+              <h1>Werk Slimmer</h1>
             </div>
             <!-- <a class="btn btn-ghost btn-sm" href="index.html#modules">← Terug</a> -->
           </div>
+
           <p class="module-why">
-            "Jy werk reeds hard. Maar werk jou dag werklik vir jou, of reageer
-            jy net op wat ook al volgende gebeur?" Hierdie reis trek die
-            alledaagse gewoontes, kommunikasie, tyd, spanwerk,
-            professionaliteit, jou netwerk, en hoe jy betaal word, saam, wat
-            'n besigheid wat glad loop onderskei van een wat net aangaan.
+          “Jy werk reeds hard. Maar werk jou dag werklik vir jou, of reageer jy net op wat ook al volgende gebeur?”
+Hierdie reis trek die alledaagse gewoontes, kommunikasie, tyd, spanwerk, professionaliteit, jou netwerk, en hoe jy betaal word, saam, wat 'n besigheid wat glad loop onderskei van een wat net aangaan.
+
           </p>
 
           <section class="topic-section" id="talk-to-customers-and-suppliers">
-            <h3>Praat op die Regte Manier met Kliënte en Verskaffers</h3>
+            <h3> Praat op die Regte Manier met Kliënte en Verskaffers</h3>
             <p class="topic-summary">
-              "'n Kliënt sê gistere se kos was koud. Spring jy in om te
-              verduidelik, of laat jy hulle werklik eers klaarpraat?"
+             “'n Kliënt sê gistere se kos was koud. Spring jy in om te verduidelik, of laat jy hulle werklik eers klaarpraat?”
             </p>
             <div class="topic-body">
               <p>
-                Hoe goed jy kommunikeer is direk gekoppel aan hoe goed jou
-                besigheid presteer. Goeie kommunikasie bou vertroue, en
-                vertroue is wat 'n kliënt laat terugkom. Groet elke kliënt,
-                'n eenvoudige "Sawubona," "Dumela," of "Goeiemôre" voordat jy
-                oor prys of produk praat, sit 'n respekvolle toon. Luister
-                voordat jy praat: as 'n kliënt kla, laat hulle klaarpraat
-                voordat jy reageer, dit word aktiewe luister genoem, en dit
-                is een van die belangrikste vaardighede wat 'n
-                klein-besigheidseienaar kan hê. Wees elke keer duidelik oor
-                prys en produk, moenie wag vir 'n kliënt om twee keer te vra
-                nie. En hou dieselfde beleefde, duidelike benadering met
-                verskaffers: bevestig altyd wat jy bestel, hoeveel dit kos,
-                en wanneer jy sal betaal of afhaal.
+               Hoe goed jy kommunikeer is direk gekoppel aan hoe goed jou besigheid presteer. Goeie kommunikasie bou vertroue, en vertroue is wat 'n kliënt laat terugkom. Groet elke kliënt, 'n eenvoudige “Sawubona,” “Dumela,” of “Goeiemôre” voordat jy oor prys of produk praat, sit 'n respekvolle toon. Luister voordat jy praat: as 'n kliënt kla, laat hulle klaarpraat voordat jy reageer, dit word aktiewe luister genoem, en dit is een van die belangrikste vaardighede wat 'n klein-besigheidseienaar kan hê. Wees elke keer duidelik oor prys en produk, moenie wag vir 'n kliënt om twee keer te vra nie. En hou dieselfde beleefde, duidelike benadering met verskaffers: bevestig altyd wat jy bestel, hoeveel dit kos, en wanneer jy sal betaal of afhaal.
               </p>
               <p>
-                💡 VINNIGE WENK: Oefen die moeilike gesprekke voordat hulle
-                gebeur. Speel 'n kliëntklagte of 'n laat-afleweringsoproep
-                met 'n familielid deur sodat dit op die oomblik self bekend
-                voel.
+                💡 VINNIGE WENK: Oefen die moeilike gesprekke voordat hulle gebeur. Speel 'n kliëntklagte of 'n laat-afleweringsoproep met 'n familielid deur sodat dit bekend voel op die oomblik self.
               </p>
             </div>
           </section>
@@ -150,16 +132,16 @@
             <div class="checklist-card">
               <div class="checklist-intro">
                 <p class="eyebrow"> ✅ VINNIGE UITDAGING</p>
-                <h2>Kliëntediens</h2>
+                <h2>Klantediens</h2>
                 <p class="lead">
-                  Watter strategieë, uit die lys hierbo, kan jy toepas om
-                  ontevrede kliënte te hanteer? Voltooi dit en verdien: 🗣️
-                  "Duidelike Kommunikeerder"-kenteken.
+                  Gebruik die lys hierbo. Watter strategieë kan jy toepas om
+                  ontevrede klante te hanteer? Voltooi dit en verdien die:
+                  🗣️ "Duidelike Kommunikeerder"-kenteken.
                 </p>
               </div>
               <div class="reflection-field">
                 <label for="clearCommunicatorInput" class="reflection-label">Jou antwoord</label>
-                <textarea id="clearCommunicatorInput" class="reflection-textarea" rows="4" placeholder="bv. Laat die kliënt eers klaarpraat, verskoon jou dan en bied aan om die ete op die plek te vervang of terug te betaal."></textarea>
+                <textarea id="clearCommunicatorInput" class="reflection-textarea" rows="4" placeholder="bv. Laat die klant eers klaar praat, vra dan om verskoning en bied aan om die ete dadelik oor te maak of terug te betaal."></textarea>
               </div>
               <div class="checklist-message" id="clearCommunicatorMessage" role="status" aria-live="polite">
                 <span id="clearCommunicatorMessageText"></span>
@@ -173,28 +155,15 @@
           <section class="topic-section" id="structure-your-day">
             <h3>Struktureer Jou Dag sodat Dit Jou Nie Oorheers Nie</h3>
             <p class="topic-summary">
-              "Waarheen het jou oggend werklik verdwyn? Sou jy elke uur
-              daarvan kon verantwoord?"
+             “Waarheen het jou oggend werklik verdwyn? Sou jy elke uur daarvan kon verantwoord?”
+
             </p>
             <div class="topic-body">
               <p>
-                Dit is nie 'n gebrek aan produkkennis wat die meeste
-                Suid-Afrikaanse handelaars terughou nie, dit is tydbestuur.
-                Klein-besigheidseienaars verloor gemiddeld naby aan 96
-                minute per dag aan ongeorganiseerde of vermorste tyd. 'n
-                Eenvoudige daaglikse struktuur help: voordat jy die huis
-                verlaat, berei voorraad voor, tel kleingeld, en gaan jou
-                toerusting na. Kom vroeg genoeg aan om op te stel voor die
-                besigste uur. Fokus tydens handelsure net op verkoop en
-                bedien, moenie administrasie in die middel van 'n gejaag doen
-                nie. Gebruik stil periodes om te herstok, skoon te maak, of
-                jou notaboek op te dateer. Tel aan die einde van die dag
-                kontant, skryf neer wat jy verkoop en spandeer het, en
-                beplan môre se voorraad.
+               Dit is nie 'n gebrek aan produkkennis wat die meeste Suid-Afrikaanse handelaars terughou nie, dit is tydbestuur. Klein-besigheidseienaars verloor gemiddeld naby aan 96 minute per dag aan ongeorganiseerde of vermorste tyd. 'n Eenvoudige daaglikse struktuur help: voordat jy die huis verlaat, berei voorraad voor, tel kleingeld, en gaan jou toerusting na. Kom vroeg genoeg aan om op te stel voor die besigste uur. Fokus tydens handelsure net op verkoop en bedien, moenie administrasie in die middel van 'n gejaag doen nie. Gebruik stil periodes om te herstok, skoon te maak, of jou notaboek op te dateer. Tel aan die einde van die dag kontant, skryf neer wat jy verkoop en spandeer het, en beplan môre se voorraad.
               </p>
               <p>
-                💡 VINNIGE WENK: Stel 'n foonalarm vir "herstoktyd" en
-                "paktyd," sodat die dag nie stilweg by jou verbygaan nie.
+                💡 VINNIGE WENK: Stel 'n foonalarm vir “herstoktyd” en “paktyd,” sodat die dag nie stilweg by jou verbygaan nie.
               </p>
             </div>
           </section>
@@ -203,22 +172,22 @@
             <div class="checklist-card">
               <div class="checklist-intro">
                 <p class="eyebrow"> ✅ VINNIGE UITDAGING</p>
-                <h2>Jou Tyd Bestuur</h2>
+                <h2>Bestuur Jou Tyd</h2>
                 <p class="lead">
-                  Skryf jou ideale daaglikse struktuur uit deur die vyf
-                  stappe hierbo te gebruik. Voltooi dit en verdien: ⏰
-                  "Tyd-temmer"-kenteken.
+                  Skryf jou ideale daaglikse struktuur uit deur die vyf fases
+                  hierbo te gebruik. Voltooi dit en verdien die: ⏰
+                  "Tydtemmer"-kenteken.
                 </p>
               </div>
               <div class="reflection-field">
                 <label for="timeTamerInput" class="reflection-label">Jou antwoord</label>
-                <textarea id="timeTamerInput" class="reflection-textarea" rows="4" placeholder="bv. Berei voorraad by die huis voor, stel vroeg op, verkoop tydens die gejaag, herstok in die stil tydperk, tel kontant en beplan môre aan die einde van die dag."></textarea>
+                <textarea id="timeTamerInput" class="reflection-textarea" rows="4" placeholder="bv. Berei voorraad by die huis voor, stel vroeg op, verkoop tydens die besige tyd, vul voorraad gedurende die stil tyd aan, tel kontant en beplan môre wanneer u afsluit."></textarea>
               </div>
               <div class="checklist-message" id="timeTamerMessage" role="status" aria-live="polite">
                 <span id="timeTamerMessageText"></span>
               </div>
               <div id="timeTamerBadgeSection" class="badge-section hidden">
-                <div class="badge">⏰ <strong>Tyd-temmer</strong>-kenteken</div>
+                <div class="badge">⏰ <strong>Tydtemmer</strong>-kenteken</div>
               </div>
             </div>
           </section>
@@ -226,29 +195,16 @@
           <section class="topic-section" id="build-a-team">
             <h3>Bou 'n Span, Selfs 'n Klein Een</h3>
             <p class="topic-summary">
-              "As jy môre siek word, sou die persoon wat jou help presies
-              weet wat om te doen?"
+            “As jy môre siek word, sou die persoon wat jou help presies weet wat om te doen?”
+
             </p>
             <div class="topic-body">
               <p>
-                Selfs 'n een- of twee-persoon-stalletjie trek voordeel uit
-                duidelike rolle. Eienaars met betroubare hulp, selfs
-                informele hulp van familie, kan meer tyd bestee aan dinge wat
-                die besigheid werklik laat groei, soos die soek van beter
-                voorraad of nuwe verkoopsplekke. As jy met selfs een ander
-                persoon werk, kom hardop ooreen, moenie net aanvaar nie, oor
-                wie kook, wie bedien, en wie die geld hanteer. Hê op enige
-                gegewe oomblik een duidelike "geld-persoon," om verwarring en
-                wantroue te vermy. Sê dankie en erken goeie werk, dit kos
-                niks en hou helpers gemotiveerd. As jy ooit verby een of twee
-                helpers uitbrei, kom vooraf ooreen op eenvoudige, regverdige
-                reëls: begin- en eindtye, hoe betaling of wins verdeel word,
-                en wat gebeur as iemand nie opdaag nie.
+             Selfs 'n een- of twee-persoon-stalletjie trek voordeel uit duidelike rolle. Eienaars met betroubare hulp, selfs informele hulp van familie, kan meer tyd bestee aan dinge wat die besigheid werklik laat groei, soos die soek van beter voorraad of nuwe verkoopsplekke. As jy met selfs een ander persoon werk, kom hardop ooreen, moenie net aanvaar nie, oor wie kook, wie bedien, en wie die geld hanteer. Hê op enige gegewe oomblik een duidelike “geld-persoon,” om verwarring en wantroue te vermy. Sê dankie en erken goeie werk, dit kos niks en hou helpers gemotiveerd. As jy ooit verby een of twee helpers uitbrei, kom vooraf ooreen op eenvoudige, regverdige reëls: begin- en eindtye, hoe betaling of wins verdeel word, en wat gebeur as iemand nie opdaag nie.
+
               </p>
               <p>
-                💡 VINNIGE WENK: 'n Geskrewe ooreenkoms hoef nie formeel te
-                wees nie. 'n Paar reëls in jou notaboek is genoeg om die
-                meeste geskille te voorkom voordat hulle begin.
+                💡 VINNIGE WENK: 'n Geskrewe ooreenkoms hoef nie formeel te wees nie. 'n Paar reëls in jou notaboek is genoeg om die meeste geskille te voorkom voordat hulle begin.
               </p>
             </div>
           </section>
@@ -259,14 +215,14 @@
                 <p class="eyebrow"> ✅ VINNIGE UITDAGING</p>
                 <h2>Spanbou</h2>
                 <p class="lead">
-                  Skryf neer, al is dit in 'n paar reëls, wie vir wat
-                  verantwoordelik is as jy met enigiemand anders werk.
-                  Voltooi dit en verdien: 🤝 "Spanbouer"-kenteken.
+                  Skryf neer, selfs al is dit net 'n paar reëls, wie waarvoor
+                  verantwoordelik is as jy saam met iemand anders werk. Voltooi dit
+                  en verdien die: 🤝 "Spanbouer"-kenteken.
                 </p>
               </div>
               <div class="reflection-field">
                 <label for="teamBuilderInput" class="reflection-label">Jou antwoord</label>
-                <textarea id="teamBuilderInput" class="reflection-textarea" rows="4" placeholder="bv. My suster kook en bedien, ek hanteer die geld en herstok."></textarea>
+                <textarea id="teamBuilderInput" class="reflection-textarea" rows="4" placeholder="bv. My suster kook en bedien, ek hanteer die geld en vul voorraad aan."></textarea>
               </div>
               <div class="checklist-message" id="teamBuilderMessage" role="status" aria-live="polite">
                 <span id="teamBuilderMessageText"></span>
@@ -280,88 +236,56 @@
           <section class="topic-section" id="act-like-the-pro-you-already-are">
             <h3>Tree Op Soos die Prof wat Jy Alreeds Is</h3>
             <p class="topic-summary">
-              "Sou 'n munisipale amptenaar, 'n verskaffer, en 'n
-              eerstekeer-kliënt jou besigheid vandag almal ernstig opneem?"
+             “Sou 'n munisipale amptenaar, 'n verskaffer, en 'n eerstekeer-kliënt jou besigheid vandag almal ernstig opneem?”
+
             </p>
             <div class="topic-body">
               <p>
-                Ongeveer 70% van klein besighede in Suid-Afrika misluk binne
-                hul eerste jaar, dikwels weens 'n gebrek aan konsekwentheid
-                en professionele praktyk, nie swak produkte nie.
-                Professionaliteit is wat mense jou ernstig laat opneem, selfs
-                sonder 'n deftige winkel. Verkoop so ver moontlik van
-                dieselfde plek, op dieselfde tye, kliënte kom terug na wat
-                hulle op kan reken. Hou jou hande, houers, en stalletjie
-                skoon, wat ook 'n wetlike higiënevereiste is. Hou jou pryse
-                regverdig en konsekwent van kliënt tot kliënt. As iets
-                verkeerd loop, vra verskoning en bied 'n regverdige oplossing
-                kalm aan, eerder as om in die openbaar te stry. En hou jou
-                woord: as jy 'n verskaffer of kliënt 'n tyd, prys, of
-                hoeveelheid gee, kom dit na. Betroubaarheid is jou reputasie.
+               Ongeveer 70% van klein besighede in Suid-Afrika misluk binne hul eerste jaar, dikwels weens 'n gebrek aan konsekwentheid en professionele praktyk, nie swak produkte nie. Professionaliteit is wat mense jou ernstig laat opneem, selfs sonder 'n deftige winkel. Verkoop so ver moontlik van dieselfde plek, op dieselfde tye, kliënte kom terug na wat hulle op kan reken. Hou jou hande, houers, en stalletjie skoon, wat ook 'n wetlike higiënevereiste is. Hou jou pryse regverdig en konsekwent van kliënt tot kliënt. As iets verkeerd loop, vra verskoning en bied 'n regverdige oplossing kalm aan, eerder as om in die openbaar te stry. En hou jou woord: as jy 'n verskaffer of kliënt 'n tyd, prys, of hoeveelheid gee, kom dit na. Betroubaarheid is jou reputasie.
+
               </p>
               <p>
-                💡 VINNIGE WENK: Kies die een professionaliteitsgewoonte uit
-                hierdie les waar jy die swakste is, en fokus hierdie week net
-                op daardie een.
+                💡 VINNIGE WENK: Kies die een professionaliteitsgewoonte uit hierdie les waar jy die swakste is, en fokus hierdie week net op daardie een.
               </p>
             </div>
           </section>
 
-            <section class="topic-section reflection-section" id="reflection-pro-mode">
-              <div class="checklist-card">
-                <div class="checklist-intro">
-                  <p class="eyebrow"> ✅ VINNIGE UITDAGING</p>
-                  <h2>Professionaliteit</h2>
-                  <p class="lead">
-                    Kies een professionaliteitsgewoonte uit hierdie les om
-                    vandag te begin. Voltooi dit en verdien: 🎩
-                    "Pro-modus"-kenteken
-                  </p>
-                </div>
-                <div class="reflection-field">
-                  <label for="proModeInput" class="reflection-label">Jou antwoord</label>
-                  <textarea id="proModeInput" class="reflection-textarea" rows="4" placeholder="bv. Ek sal my stalletjie se openingstyd hierdie week elke dag presies dieselfde hou."></textarea>
-                </div>
-                <div class="checklist-message" id="proModeMessage" role="status" aria-live="polite">
-                  <span id="proModeMessageText"></span>
-                </div>
-                <div id="proModeBadgeSection" class="badge-section hidden">
-                  <div class="badge">🎩 <strong>Pro-modus</strong>-kenteken</div>
-                </div>
+          <section class="topic-section reflection-section" id="reflection-pro-mode">
+            <div class="checklist-card">
+              <div class="checklist-intro">
+                <p class="eyebrow"> ✅ VINNIGE UITDAGING</p>
+                <h2>Professionaliteit</h2>
+                <p class="lead">
+                  Kies een professionaliteitsgewoonte uit hierdie les om vandag
+                  te begin toepas. Voltooi dit en verdien die: 🎩
+                  "Pro-modus"-kenteken.
+                </p>
               </div>
-            </section>
+              <div class="reflection-field">
+                <label for="proModeInput" class="reflection-label">Jou antwoord</label>
+                <textarea id="proModeInput" class="reflection-textarea" rows="4" placeholder="bv. Ek sal hierdie week elke dag presies dieselfde tyd my stalletjie oopmaak."></textarea>
+              </div>
+              <div class="checklist-message" id="proModeMessage" role="status" aria-live="polite">
+                <span id="proModeMessageText"></span>
+              </div>
+              <div id="proModeBadgeSection" class="badge-section hidden">
+                <div class="badge">🎩 <strong>Pro-modus</strong>-kenteken</div>
+              </div>
+            </div>
+          </section>
 
           <section class="topic-section" id="build-a-network-that-backs-you-up">
             <h3>Bou 'n Netwerk wat Jou Ondersteun</h3>
             <p class="topic-summary">
-              "Wie sou jou waarsku as 'n inspekteur vanmiddag jou kant toe
-              kom?"
+             “Wie sou jou waarsku as 'n inspekteur vanmiddag jou kant toe kom?”
             </p>
             <div class="topic-body">
               <p>
-                Handelaars met wyer netwerke, ander handelaars, verskaffers,
-                gemeenskapskontakte, kry beter toegang tot inligting,
-                befondsing, en ondersteuning gedurende moeilike tye as
-                diegene wat in isolasie werk. Dit is veral waar by
-                taxistaanplekke, waar baie verkopers langs mekaar handel
-                dryf. Leer die handelaars om jou ken: hulle is nie net
-                mededingers nie, hulle kan verskafferskontakte deel, jou van
-                inspeksies waarsku, jou stalletjie dophou, of oorloop-kliënte
-                na jou verwys. Sluit aan by of vorm 'n handelaarsgroep, baie
-                taxistaanplekke en townships het reeds informele
-                verenigings; jou munisipaliteit se Ekonomiese
-                Ontwikkelingskantoor kan jou gewoonlik vertel of een naby
-                bestaan. Hou verskafferskontakte op jou foon gestoor met
-                notas oor prysgewing en betroubaarheid, en woon gratis
-                plaaslike geleenthede by wat deur SEDA of jou munisipaliteit
-                aangebied word, wanneer jy kan. WhatsApp-groepe is 'n gratis,
-                lae-moeite manier om met almal tegelyk verbind te bly.
+               Handelaars met wyer netwerke, ander handelaars, verskaffers, gemeenskapskontakte, kry beter toegang tot inligting, befondsing, en ondersteuning gedurende moeilike tye as diegene wat in isolasie werk. Dit is veral waar by taxistaanplekke, waar baie verkopers langs mekaar handel dryf. Leer die handelaars om jou ken: hulle is nie net mededingers nie, hulle kan verskafferskontakte deel, jou van inspeksies waarsku, jou stalletjie dophou, of oorloop-kliënte na jou verwys. Sluit aan by of vorm 'n handelaarsgroep, baie taxistaanplekke en townships het reeds informele verenigings; jou munisipaliteit se Ekonomiese Ontwikkelingskantoor kan jou gewoonlik vertel of een naby bestaan. Hou verskafferskontakte op jou foon gestoor met notas oor prysgewing en betroubaarheid, en woon gratis plaaslike geleenthede by wat deur SEDA of jou munisipaliteit aangebied word, wanneer jy kan. WhatsApp-groepe is 'n gratis, lae-moeite manier om met almal tegelyk verbind te bly.
+
               </p>
               <p>
-                💡 VINNIGE WENK: Jou netwerk is ook jou
-                vroeë-waarskuwingstelsel. 'n Vinnige WhatsApp-boodskap van 'n
-                naburige handelaar kan jou 'n boete, of 'n vermorste rit,
-                spaar.
+                💡 VINNIGE WENK: Jou netwerk is ook jou vroeë waarskuwingstelsel. 'n Vinnige WhatsApp-boodskap van 'n naburige handelaar kan jou 'n boete, of 'n vermorste rit, spaar.
               </p>
             </div>
           </section>
@@ -372,21 +296,21 @@
                 <p class="eyebrow"> ✅ VINNIGE UITDAGING</p>
                 <h2>Netwerkvorming</h2>
                 <p class="lead">
-                  Noem drie mense, 'n handelaar, 'n verskaffer, en 'n
-                  gemeenskapskontak, wat jy hierdie week met 'n besigheidsvraag
-                  kon bel. Voltooi dit en verdien: 🌐
-                  "Goed Gekonnekteer"-kenteken.
+                  Noem drie mense — 'n handelaar, 'n verskaffer en 'n
+                  gemeenskapskontak — wat jou hierdie week met 'n besigheidsvraag
+                  kan bel. Voltooi dit en verdien die: 🌐
+                  "Goed Verbind"-kenteken.
                 </p>
               </div>
               <div class="reflection-field">
                 <label for="wellConnectedInput" class="reflection-label">Jou antwoord</label>
-                <textarea id="wellConnectedInput" class="reflection-textarea" rows="4" placeholder="bv. Handelaar: die vrou wat twee stalletjies verder vetkoek verkoop. Verskaffer: my groenteverskaffer by die mark. Gemeenskap: die taxistaanplek-marshal."></textarea>
+                <textarea id="wellConnectedInput" class="reflection-textarea" rows="4" placeholder="bv. Handelaar: die vrou wat twee stalletjies verder vetkoek verkoop. Verskaffer: my groenteverskaffer by die mark. Gemeenskap: die taxistaanplek se marshal."></textarea>
               </div>
               <div class="checklist-message" id="wellConnectedMessage" role="status" aria-live="polite">
                 <span id="wellConnectedMessageText"></span>
               </div>
               <div id="wellConnectedBadgeSection" class="badge-section hidden">
-                <div class="badge">🌐 <strong>Goed Gekonnekteer</strong>-kenteken</div>
+                <div class="badge">🌐 <strong>Goed Verbind</strong>-kenteken</div>
               </div>
             </div>
           </section>
@@ -394,196 +318,105 @@
           <section class="topic-section" id="accept-card-payments-with-yoco">
             <h3>Aanvaar Kaartbetalings met Yoco</h3>
             <p class="topic-summary">
-              "'n Kliënt wil hul kaart tik, maar jy vat net kontant. Koop
-              hulle in elk geval, of loop hulle na die volgende stalletjie?"
+              “'n Kliënt wil hul kaart tik, maar jy vat net kontant. Koop hulle in elk geval, of loop hulle na die volgende stalletjie?”
+
             </p>
             <div class="topic-body">
               <p>
-                Byna 6 miljoen klein Suid-Afrikaanse besighede aanvaar steeds
-                net kontant, maar baie kliënte dra nou minder daarvan,
-                bekommerd oor diefstal. Om beide kontant en kaart te aanvaar
-                gee jou die beste van albei wêrelde, en jy hoef nie by CIPC
-                geregistreer te wees om by Yoco aan te sluit nie. Gaan na
-                yoco.com of laai die Yoco-app af, kies "Get Started," en kies
-                Sole Proprietor. Voer jou persoonlike besonderhede in en
-                verifieer jou identiteit met 'n foto van jou Suid-Afrikaanse
-                ID. Voeg jou handelsadres by (jou huisadres is fyn as jy van
-                daar af handel dryf) en 'n Suid-Afrikaanse bankrekening in
-                jou eie naam. Kies jou kaartmasjien, 'n instapvlak Yoco Go
-                kos ongeveer R800 vooraf met 'n klein daaglikse fooi net op
-                dae wat jy dit gebruik, en geen maandelikse fooi nie. Sodra
-                dit aankom, is dit reeds aan jou profiel gekoppel.
+               Byna 6 miljoen klein Suid-Afrikaanse besighede aanvaar steeds net kontant, maar baie kliënte dra nou minder daarvan, bekommerd oor diefstal. Om beide kontant en kaart te aanvaar gee jou die beste van albei wêrelde, en jy hoef nie by CIPC geregistreer te wees om by Yoco aan te sluit nie. Gaan na yoco.com of laai die Yoco-app af, kies “Get Started,” en kies Sole Proprietor. Voer jou persoonlike besonderhede in en verifieer jou identiteit met 'n foto van jou Suid-Afrikaanse ID. Voeg jou handelsadres by (jou huisadres is fyn as jy van daar af handel dryf) en 'n Suid-Afrikaanse bankrekening in jou eie naam. Kies jou kaartmasjien, 'n instapvlak Yoco Go kos ongeveer R800 vooraf met 'n klein daaglikse fooi net op dae wat jy dit gebruik, en geen maandelikse fooi nie. Sodra dit aankom, is dit reeds aan jou profiel gekoppel.
+
               </p>
               <p>
-                💡 VINNIGE WENK: Kaartbetalings land die volgende
-                besigheidsdag in jou rekening, nie onmiddellik nie, so beplan
-                jou kontantvloei daarrondom as jy kontant byderhand nodig het
-                om voorraad te koop.
+                💡 VINNIGE WENK:  Kaartbetalings land die volgende besigheidsdag in jou rekening, nie onmiddellik nie, so beplan jou kontantvloei daarrondom as jy kontant byderhand nodig het om voorraad te koop.
               </p>
-
-              <p>Voltooi dit en verdien: 💳 "Tik om te Handel"-kenteken</p>
+              <p>Voltooi dit en verdien die: 💳 "Tik om Handel te Dryf"-kenteken</p>
             </div>
           </section>
 
-          <section class="topic-section reflection-section" id="reflection-tap-to-trade">
-            <div class="checklist-card">
-            <div class="checklist-intro">
-              <p class="eyebrow"> ✅ VINNIGE UITDAGING</p>
-              <h2>Yoco-aansluitkontrolelys</h2>
-              <p class="lead">
-                Gaan na yoco.com of laai die app af en gaan presies na wat jy
-                sou nodig hê om aan te sluit.
-              </p>
-            </div>
-
-            <form id="yocoChecklistForm">
-              <p class="quiz-question">
-                Watter van die volgende het jy nodig om by Yoco aan te sluit?
-                <span class="quiz-instruction">Kies al die korrekte antwoorde.</span>
-              </p>
-
-              <div class="quiz-options">
-                <label class="quiz-option">
-                  <input type="checkbox" class="yoco-checklist-option" value="A" />
-                  <span>'n Geldige Suid-Afrikaanse ID en 'n foto om jou identiteit te verifieer</span>
-                </label>
-                <label class="quiz-option">
-                  <input type="checkbox" class="yoco-checklist-option" value="B" />
-                  <span>'n CIPC-registrasiesertifikaat</span>
-                </label>
-                <label class="quiz-option">
-                  <input type="checkbox" class="yoco-checklist-option" value="C" />
-                  <span>Jou persoonlike besonderhede</span>
-                </label>
-                <label class="quiz-option">
-                  <input type="checkbox" class="yoco-checklist-option" value="D" />
-                  <span>'n Suid-Afrikaanse bankrekening in jou eie naam</span>
-                </label>
-                <label class="quiz-option">
-                  <input type="checkbox" class="yoco-checklist-option" value="E" />
-                  <span>'n Handelsadres, soos jou huisadres as jy van die huis af handel dryf</span>
-                </label>
-                <label class="quiz-option">
-                  <input type="checkbox" class="yoco-checklist-option" value="F" />
-                  <span>'n Besigheidskantoor in 'n winkelsentrum</span>
-                </label>
-                <label class="quiz-option">
-                  <input type="checkbox" class="yoco-checklist-option" value="G" />
-                  <span>'n Keuse van kaartmasjien, soos die Yoco Go</span>
-                </label>
-                <label class="quiz-option">
-                  <input type="checkbox" class="yoco-checklist-option" value="H" />
-                  <span>'n Groot bedrag kontant om die rekening te open</span>
-                </label>
-              </div>
-
-              <button type="button" id="checkYocoChecklist" class="btn btn-primary">Gaan My Antwoorde Na</button>
-              <div id="yocoChecklistResult" class="result hidden"></div>
-            </form>
-
-            <div id="tapToTradeBadgeSection" class="badge-section hidden">
-              <div class="badge">💳 <strong>Tik om te Handel</strong>-kenteken</div>
-            </div>
-          </div>
-        </section>
-
-          <section class="topic-section" id="References">
+ <section class="topic-section" id="References">
             <h3>Verwysings</h3>
             <div class="faq-list">
             <details class="faq-item" >
-              <summary style="color:#319966;">Bronne vir Feitekontrole: Wetgewing & Regulasie</summary>
+              <summary style="color:#319966;">Bronne vir Feitekontrole: Wetgewing & Regulasies</summary>
               <p class="faq-answer">
                 <p>
-                Elke wetlike feit in Reise 3, 4, en 10 is uit huidige
-                Suid-Afrikaanse wetgewing en reguleerdersriglyne geneem:
+                Elke wetlike feit in Reise 3, 4 en 10 is gebaseer op huidige Suid-Afrikaanse wetgewing en riglyne van reguleerders:
               </p>
               <ul>
-                <li>
-                  Regulations Governing General Hygiene Requirements for Food
-                  Premises (R638 of 2018), ingevolge die Foodstuffs, Cosmetics
-                  and Disinfectants Act 54 of 1972 — afgedwing deur munisipale
-                  Omgewingsgesondheidsdepartemente.
-                </li>
-                <li>
-                  Regulations Relating to the Labelling and Advertising of
-                  Foodstuffs (R146), ingevolge die Foodstuffs, Cosmetics and
-                  Disinfectants Act 54 of 1972 — Departement van Gesondheid.
-                </li>
-                <li>Businesses Act 71 of 1991 — gov.za.</li>
-                <li>
-                  Companies Act 71 of 2008 en die Companies and Intellectual
-                  Property Commission (CIPC) — maatskappyregistrasie,
-                  besigheidstruktuuromskepping, en handelsmerkregistrasie —
-                  cipc.co.za.
-                </li>
-                <li>
-                  National Regulator for Compulsory Specifications (NRCS),
-                  Food and Associated Industries-afdeling — geblikte,
-                  gerookte, en vakuumverpakte produkte — nrcs.org.za.
-                </li>
-                <li>
-                  South African Revenue Service (SARS), Small Businesses –
-                  Taxpayers, die Belastingnakomingstatus-stelsel, en Budget
-                  2026 Frequently Asked Questions (BTW- en
-                  Omsetbelasting-drempelveranderinge van krag vanaf 1 April
-                  2026) — sars.gov.za.
-                </li>
-                <li>
-                  Unemployment Insurance Act 63 of 2001 en Unemployment
-                  Insurance Contributions Act 4 of 2002 — Departement van
-                  Indiensneming en Arbeid — labour.gov.za.
-                </li>
-                <li>
-                  Compensation for Occupational Injuries and Diseases Act 130
-                  of 1993 (COIDA) — Vergoedingsfonds, Departement van
-                  Indiensneming en Arbeid — labour.gov.za.
-                </li>
-                <li>
-                  Basic Conditions of Employment Act 75 of 1997 — Departement
-                  van Indiensneming en Arbeid — labour.gov.za.
-                </li>
-                <li>
-                  National Environmental Management: Waste Act 59 of 2008 en
-                  Extended Producer Responsibility (EPR) Regulations
-                  (Government Notice R.1184, 2020) — Departement van Bosbou,
-                  Visserye en die Omgewing — dffe.gov.za.
-                </li>
-                <li>
-                  Broad-Based Black Economic Empowerment Act 53 of 2003, en
-                  die Codes of Good Practice on B-BBEE (drempels vir
-                  Vrygestelde Mikro-ondernemings) — dtic.gov.za.
-                </li>
-                <li>
-                  Protection of Personal Information Act 4 of 2013 (POPIA) —
-                  Information Regulator South Africa — inforegulator.org.za.
-                </li>
-                <li>
-                  Consumer Protection Act 68 of 2008 — bepalings vir aanlyn-
-                  en afstandverkope — gov.za.
-                </li>
-                <li>
-                  African Continental Free Trade Area (AfCFTA) —
-                  Suid-Afrikaanse implementeringsriglyne — dtic.gov.za.
-                </li>
+               <li>
+  Regulasies wat Algemene Higiënevereistes vir Voedselpersele Beheer
+  (R638 van 2018), ingevolge die Wet op Voedingsmiddels, Skoonheidsmiddels en
+  Ontsmettingsmiddels 54 van 1972 — afgedwing deur munisipale
+  Omgewingsgesondheidsdepartemente.
+</li>
+<li>
+  Regulasies betreffende die Etikettering en Advertering van
+  Voedingsmiddels (R146), ingevolge die Wet op Voedingsmiddels, Skoonheidsmiddels en
+  Ontsmettingsmiddels 54 van 1972 — Departement van Gesondheid.
+</li>
+<li>Wet op Besighede 71 van 1991 — gov.za.</li>
+<li>
+  Maatskappywet 71 van 2008 en die Kommissie vir Maatskappye en Intellektuele
+  Eiendom (CIPC) — maatskappyregistrasie, omskakeling van besigheidstruktuur
+  en handelsmerkregistrasie — cipc.co.za.
+</li>
+<li>
+  Nasionale Reguleerder vir Verpligte Spesifikasies (NRCS), Voedsel- en
+  Geassosieerde Nywerhede-afdeling — ingemaakte, gerookte en
+  vakuumverpakte produkte — nrcs.org.za.
+</li>
+<li>
+  Suid-Afrikaanse Inkomstediens (SARS), Klein Besighede – Belastingbetalers,
+  Belastingnakomingstatusstelsel en Gereelde Vrae oor Begroting 2026 (BTW- en
+  Omsetbelastingdrempelveranderinge wat vanaf 1 April 2026 in werking tree) — sars.gov.za.
+</li>
+<li>
+  Wet op Werkloosheidsversekering 63 van 2001 en Wet op Werkloosheidsversekeringsbydraes
+  4 van 2002 — Departement van Indiensneming en Arbeid — labour.gov.za.
+</li>
+<li>
+  Wet op Vergoeding vir Beroepsbeserings en -siektes 130 van
+  1993 (COIDA) — Vergoedingsfonds, Departement van Indiensneming en Arbeid —
+  labour.gov.za.
+</li>
+<li>
+  Wet op Basiese Diensvoorwaardes 75 van 1997 — Departement van
+  Indiensneming en Arbeid.
+</li>
+<li>
+  Wet op Nasionale Omgewingsbestuur: Afval 59 van 2008 en Regulasies oor
+  Uitgebreide Produsenteverantwoordelikheid (Goewermentskennisgewing R.1184, 2020)
+  — Departement van Bosbou, Visserye en die Omgewing — dffe.gov.za.
+</li>
+<li>
+  Wet op Breëbasis Swart Ekonomiese Bemagtiging 53 van 2003, en die
+  Kodes van Goeie Praktyk oor B-BBEE (drempels vir Vrygestelde Mikro-ondernemings)
+  — dtic.gov.za.
+</li>
+<li>
+  Wet op die Beskerming van Persoonlike Inligting 4 van 2013 (POPIA) —
+  Inligtingsreguleerder Suid-Afrika — inforegulator.org.za.
+</li>
+<li>
+  Wet op Verbruikersbeskerming 68 van 2008 — bepalings oor aanlyn- en
+  afstandverkope — gov.za.
+</li>
+<li>
+  Afrika Kontinentale Vryhandelsgebied (AfCFTA)
+</li>
               </ul>
               <p>
-                <i
-                  >Let wel: munisipale fooie, drempels, en aansoekprosesse
-                  verskil van area tot area en word gereeld deur die regering
-                  en reguleerders hersien. Verifieer huidige vereistes direk
-                  met die betrokke munisipaliteit of reguleerder voordat
-                  finale syfers in die app gepubliseer word.</i
+                <i><strong>Nota:</strong> Munisipale fooie, drempels en aansoekprosesse verskil van gebied tot gebied en word van tyd tot tyd deur die regering en reguleerders hersien. Verifieer huidige vereistes direk by die betrokke munisipaliteit of reguleerder voordat finale syfers in die toepassing gepubliseer word.
+</i
                 >
               </p>
               </p>
             </details>
               <details class="faq-item">
-              <summary style="color:#319966;">Bronne & Verdere Leeswerk: Besigheidspraktyk, Bemarking &
-              Finansiële Geletterdheid</summary>
+              <summary style="color:#319966;">Bronne & Verdere Leeswerk: Besigheidspraktyk, Bemarking & Finansiële Geletterdheid</summary>
               <p class="faq-answer">
                  <p>
-                Handelsmerk- en digitale bemarkingsfeite in Reise 6 en 7 is
-                uit die volgende geneem:
+                Feite oor handelsmerkontwikkeling en digitale bemarking in Reise 6 en 7 is gebaseer op die volgende:
               </p>
               <ul>
                 <li>
@@ -591,12 +424,12 @@
                   Important for Business. Cloudfusion.co.za.
                 </li>
                 <li>
-                  Dandu, R. (2015). What Is Branding and Why Is It Important
-                  for Your Business? Brandingmag.
+                  Dandu, R. (2015). What Is Branding and Why Is It Important for
+                  Your Business? Brandingmag.
                 </li>
                 <li>
-                  Mercer, S. (2026). What to Post When You Have Nothing to
-                  Post: 10 Content Ideas for Summerville Businesses. What's Up
+                  Mercer, S. (2026). What to Post When You Have Nothing to Post:
+                  10 Content Ideas for Summerville Businesses. What's Up
                   Summerville.
                 </li>
                 <li>
@@ -610,19 +443,14 @@
               </ul>
               <p>
                 <i
-                  >Statistieke oor Suid-Afrikaanse klein-besigheidskommunikasie,
-                  tydbestuur, professionaliteit, netwerkvorming,
-                  rekordhouding, en bankwese (Reise 1, 2, 8, en 9) is uit
-                  nasionale klein-besigheidsnavorsing geneem. Verifieer
-                  huidige syfers teen oorspronklike bronne voordat finale
-                  syfers in die app gepubliseer word.</i
+                  >Statistieke oor Suid-Afrikaanse kleinsakekommunikasie, tydsbestuur, professionaliteit, netwerkvorming, rekordhouding en bankdienste (Reise 1, 2, 8 en 9) is gebaseer op nasionale navorsing oor kleinsakeondernemings. Verifieer huidige syfers teen die oorspronklike bronne voordat finale getalle in die toepassing gepubliseer word.
+</i
                 >
               </p>
 
               <p>
-                Groeigereedheid-, uitleenrisiko-, befondsing-, en
-                voorraadbestuurfeite in Reise 1, 2, 5, en 9 is uit die
-                volgende geneem:
+                Feite oor gereedheid vir groei, uitleenrisiko, befondsing en voorraadbestuur in Reise 1, 2, 5 en 9 is gebaseer op die volgende:
+
               </p>
               <ul>
                 <li>
@@ -661,8 +489,7 @@
               <summary style="color:#319966;">Bronne & Verdere Leeswerk: Die VUCA-konsep</summary>
               <p class="faq-answer">
                 <p>
-                Die missiestelling op die voorbladsy is uit die volgende
-                geneem:
+                Die missiestelling op die tuisblad is gebaseer op die volgende:
               </p>
               <ul>
                 <li>
@@ -673,6 +500,8 @@
               </p>
             </details>
             </div>
+            
+           
           </section>
 
           <div class="module-footer-actions">
@@ -682,15 +511,12 @@
               target="_blank"
               rel="noopener"
             >
-              ⬇ Laai af / Druk Module
+              ⬇ Laai Module Af / Druk
             </a>
-
             <p class="module-download-note">
-              Maak 'n drukbare PDF oop. Stoor dit vir vanlyngebruik of druk
-              dit.
+              Maak 'n drukbare PDF oop. Stoor dit vir vanlyn gebruik of druk dit uit.
             </p>
           </div>
-          
 
           <div class="module-pager">
             <a class="btn btn-outline" href="Journey7.html">
@@ -719,8 +545,7 @@
               alt="VUKA"
             />
             <p class="footer-note">
-              Gratis vaardighede vir Suid-Afrika se
-              voedselsektor-entrepreneurs.
+              Gratis vaardighede vir Suid-Afrika se ondernemers in die voedselsektor.
             </p>
           </div>
 
@@ -736,7 +561,7 @@
                 target="_blank"
                 rel="noopener"
               >
-                Beoordeel Ons Asseblief
+                Gee ons asseblief terugvoer
               </a>
             </div>
           </div>
@@ -752,7 +577,7 @@
             />
             <div>
               <p class="footer-credit-title">Geskep deur Ubuntu Nexus</p>
-              <p class="footer-credit-note">Span 22</p>
+              <p class="footer-credit-note">Team 22</p>
             </div>
           </div>
 
@@ -765,7 +590,7 @@
     <script src="libs/jspdf.plugin.autotable.min.js"></script>
     <script src="js/main.js"></script>
   
-    <script>
+  <script>
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
       navigator.serviceWorker.register("sw.js").catch((err) => {
