@@ -34,27 +34,55 @@
 
     <a class="skip-link" href="#main">Spring na hoofinhoud</a>
 
-<header class="ribbon">
+    <header class="ribbon">
+      <div class="container ribbon-inner">
+        <a class="logo" href="../../index.html">
+          <img
+            class="logo-img"
+            src="../../images_global/vuka-logo-white.png"
+            alt="Vuka-logo"
+          />
+        </a>
 
-  <div class="container ribbon-inner">
+        <p class="calculator-page-title">Aanvangskapitaal-sakrekenaar</p>
 
-    <a class="logo" href="../../index.html">
+        <nav
+          class="nav-right nav-right--compact"
+          id="navRight"
+          aria-label="Primêre navigasie"
+        >
+          <ul class="nav-links">
+            <li><a href="../../index.html">Tuis</a></li>
+            <li><a href="../../index.html#about">Oor Vuka</a></li>
+            <li><a href="../../index.html#modules">Modules</a></li>
+            <li><a href="../../index.html#faq">Gereelde Vrae</a></li>
+          </ul>
+          <select
+            class="lang-select"
+            aria-label="Kies taal"
+            onchange="if (this.value) window.location.href = this.value;"
+          >
+            <option value="" selected>🌐 Afrikaans</option>
+            <option disabled>🌐 isiZulu (binnekort beskikbaar)</option>
+            <option disabled>🌐 English</option> <!--value="https://vuka22.netlify.app"-->
+          </select>
+        </nav>
 
-      <img class="logo-img" src="../../images_global/vuka-logo-white.png" alt="Vuka-logo" />
+        <a class="btn btn-ghost btn-sm header-back-btn" href="../../index.html"
+          >← Gaan terug na Tuisblad</a
+        >
 
-    </a>
-
-    <p class="calculator-page-title">Aanvangskapitaal-sakrekenaar</p>
- <select class="lang-select" aria-label="Kies taal" onchange="if(this.value) window.location.href = this.value;">
-  <option value="" selected>🌐 Afrikaans</option>
-  <option disabled>🌐 isiZulu (binnekort beskikbaar)</option>
-  <option disabled>🌐 English</option> <!--value="https://vuka22.netlify.app"-->
-</select>
-    <a class="btn btn-ghost btn-sm" href="../../index.html">← Gaan terug na Tuisblad</a>
-
-  </div>
-
-</header>
+        <button
+          class="burger"
+          id="burgerBtn"
+          aria-label="Maak kieslys oop"
+          aria-expanded="false"
+          aria-controls="navRight"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
 
 
     <main id="main">
@@ -342,7 +370,7 @@
 
             <p class="footer-note">
 
-              Gratis vaardighede vir Suid-Afrika se entrepreneurs in die voedselsektor.
+              Gratis vaardighede vir Suid-Afrika se ondernemers in die voedselsektor.
 
             </p>
 
@@ -360,7 +388,7 @@
 
               <a href="../../team.html">Ontmoet die Span</a>
 
-              <a href="https://forms.google.com/" target="_blank" rel="noopener">Resenseer Ons asseblief</a>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWoTinUkNsyFvYVqJk79LPJY2lL1nYslnXRa6ewYi_eWehkw/viewform?usp=publish-editor" target="_blank" rel="noopener">Gee ons asseblief terugvoer</a>
 
             </div>
 
@@ -424,6 +452,18 @@
 
 </script>
 
+    <script>
+      /* Mobile nav toggle (same behaviour as main.js on the journey pages) */
+      (function () {
+        const burgerBtn = document.getElementById("burgerBtn");
+        const navRight = document.getElementById("navRight");
+        if (!burgerBtn || !navRight) return;
+        burgerBtn.addEventListener("click", () => {
+          const isOpen = navRight.classList.toggle("open");
+          burgerBtn.setAttribute("aria-expanded", String(isOpen));
+        });
+      })();
+    </script>
   </body>
 
 </html>

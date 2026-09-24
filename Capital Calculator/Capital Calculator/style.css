@@ -21,15 +21,6 @@ body{
     background:var(--background);
 }
 
-nav{
-    background: var(--dark);
-    padding: 20px 10px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 3rem;
-    text-align: center;
-    color: var(--background);
-}
-
 .hero{
     padding: 60px 20px;
     text-align: center;
@@ -804,20 +795,26 @@ input{
   font-size: 0.9rem;
 }
 
-.burger {
-  display: none;
-  padding: 8px;
-  border: 0;
+/* --------------------------------------------------------------------------
+   Header / burger menu
+   The burger's base + mobile (max-width: 640px) rules live in
+   ../../css/vuka_styles_redesigned.css. Do NOT set .burger { display } here:
+   this file loads later and would hide the button on mobile again.
+   -------------------------------------------------------------------------- */
+
+/* the global `button:hover` rule above would otherwise tint the burger */
+.burger:hover {
   background: transparent;
 }
 
-.burger span {
-  display: block;
-  width: 24px;
-  height: 2px;
-  margin: 5px 0;
-  background: var(--white);
-  transition:
-    transform 0.2s ease,
-    opacity 0.2s ease;
+/* desktop: home links only appear inside the burger menu */
+.nav-right--compact .nav-links {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .calculator-page-title,
+  .header-back-btn {
+    display: none;
+  }
 }

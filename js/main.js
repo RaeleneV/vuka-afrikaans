@@ -31,9 +31,9 @@ var DISPLAY_AF = {
   "Exporting via AfCFTA": "Uitvoer deur AfCFTA-geleenthede",
   "Menu board": "Spyskaartbord",
   "QR code at stall": "QR-kode by die stalletjie",
-  "Customer group": "Klantegroep",
+  "Customer group": "Kliëntegroep",
   "Social media profile": "Sosialemedia-profiel",
-  "Tell regulars": "Vertel gereelde klante",
+  "Tell regulars": "Vertel gereelde kliënte",
   "Monday": "Maandag",
   "Tuesday": "Dinsdag",
   "Wednesday": "Woensdag",
@@ -98,7 +98,7 @@ function af(value) {
 // ==========================================================================
 (function () {
   var READY_THRESHOLD = 0.6;
-  var READY_MESSAGE = "Goeie werk. U toon werklike tekens van groei!";
+  var READY_MESSAGE = "Goeie werk. Jy toon werklike tekens van groei!";
 
   var list = document.getElementById("checklistList");
   if (!list) return; // not on this page
@@ -283,7 +283,7 @@ function af(value) {
 // Journey 1 — Reflection textbox (partial-progress message + automatic badge)
 // ==========================================================================
 (function () {
-  var READY_MESSAGE = "Puik besinning! U is gereed om die volgende stap te neem.";
+  var READY_MESSAGE = "Puik besinning! Jy is gereed om die volgende stap te neem.";
 
   var textarea = document.getElementById("growthReflectionInput");
   var messageEl = document.getElementById("reflectionMessage");
@@ -371,11 +371,11 @@ function af(value) {
 
     var message;
     if (profit > 0) {
-      message = "U wins hierdie week is <strong>" + profit.toFixed(2) + "</strong>. Goed gedaan!";
+      message = "Jou wins hierdie week is <strong>" + profit.toLocaleString("af-ZA", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + "</strong>. Goed gedaan!";
     } else if (profit === 0) {
-      message = "U het hierdie week gelykop gebreek: <strong>0.00</strong> wins.";
+      message = "Jy het hierdie week gelykop gebreek: <strong>0,00</strong> wins.";
     } else {
-      message = "U het hierdie week 'n verlies van <strong>" + Math.abs(profit).toFixed(2) + "</strong> gely.";
+      message = "Jy het hierdie week 'n verlies van <strong>" + Math.abs(profit).toLocaleString("af-ZA", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + "</strong> gely.";
     }
 
     profitResult.innerHTML = message;
@@ -409,7 +409,7 @@ function af(value) {
     var emergency = emergencyInput.value.trim();
 
     if (!business && !personal && !emergency) {
-      resultEl.textContent = "Vul ten minste een plek in om u plan te stoor.";
+      resultEl.textContent = "Vul ten minste een plek in om jou plan te stoor.";
       resultEl.classList.remove("hidden");
       resultEl.classList.add("result-error");
       return;
@@ -420,7 +420,7 @@ function af(value) {
     if (personal) parts.push("Persoonlik: " + personal);
     if (emergency) parts.push("Noodgeval: " + emergency);
 
-    resultEl.innerHTML = "U plan — " + parts.join(" · ");
+    resultEl.innerHTML = "Jou plan — " + parts.join(" · ");
     resultEl.classList.remove("hidden");
     resultEl.classList.remove("result-error");
     badgeEl.classList.remove("hidden");
@@ -450,7 +450,7 @@ function af(value) {
     var idea = ideaInput.value.trim();
 
     if (!expense || !idea) {
-      resultEl.textContent = "Voeg u grootste uitgawe en een idee om dit te verminder by.";
+      resultEl.textContent = "Voeg jou grootste uitgawe en een idee om dit te verminder by.";
       resultEl.classList.remove("hidden");
       resultEl.classList.add("result-error");
       return;
@@ -458,8 +458,8 @@ function af(value) {
 
     resultEl.innerHTML =
       "Grootste uitgawe: <strong>" + expense + "</strong>" +
-      (amount ? " (~R" + amount.toFixed(2) + "/week)" : "") +
-      "<br>U plan: " + idea;
+      (amount ? " (~R" + amount.toLocaleString("af-ZA", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + "/week)" : "") +
+      "<br>Jou plan: " + idea;
     resultEl.classList.remove("hidden");
     resultEl.classList.remove("result-error");
     badgeEl.classList.remove("hidden");
@@ -497,7 +497,7 @@ function af(value) {
         rows.push(
           (type === "in" ? "Geld In" : "Geld Uit") +
           ": " + desc +
-          (amount ? " — R" + amount.toFixed(2) : "")
+          (amount ? " — R" + amount.toLocaleString("af-ZA", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) : "")
         );
       }
     }
@@ -537,7 +537,7 @@ function af(value) {
   var requirements = {
     capitec: [
       "'n Bestaande Capitec GlobalOne-persoonlike rekening",
-      "U Suid-Afrikaanse ID",
+      "Jou Suid-Afrikaanse ID",
       "Geen minimum deposito om oop te maak nie",
     ],
     tyme: [
@@ -579,7 +579,7 @@ function af(value) {
       }
 
       if (!chosenTasks.length) {
-        resultEl.textContent = "Merk ten minste een ding wat u hierdie week sal doen.";
+        resultEl.textContent = "Merk ten minste een ding wat jy hierdie week sal doen.";
         resultEl.classList.remove("hidden");
         resultEl.classList.add("result-error");
         return;
@@ -613,13 +613,13 @@ function af(value) {
     var notes = notesInput.value.trim();
 
     if (!notes) {
-      resultEl.textContent = "Voeg ten minste een dokument of permit by wat u sal nodig hê.";
+      resultEl.textContent = "Voeg ten minste een dokument of permit by wat jy sal nodig hê.";
       resultEl.classList.remove("hidden");
       resultEl.classList.add("result-error");
       return;
     }
 
-    resultEl.innerHTML = "U lys: " + notes;
+    resultEl.innerHTML = "Jou lys: " + notes;
     resultEl.classList.remove("hidden");
     resultEl.classList.remove("result-error");
     badgeEl.classList.remove("hidden");
@@ -687,7 +687,7 @@ function af(value) {
     var missing = missingInput.value.trim();
 
     if (!have && !missing) {
-      resultEl.textContent = "Lys ten minste een permit wat u het of kortkom.";
+      resultEl.textContent = "Lys ten minste een permit wat jy het of kortkom.";
       resultEl.classList.remove("hidden");
       resultEl.classList.add("result-error");
       return;
@@ -797,13 +797,13 @@ function af(value) {
     if (total >= VAT_THRESHOLD) {
       progressFillEl.classList.add("over-limit");
       resultEl.classList.add("result-alert");
-      statusLine = "U verkope is by of bo die BTW-drempel. Bevestig u posisie dadelik by SARS.";
+      statusLine = "Jou verkope is by of bo die BTW-drempel. Bevestig jou posisie dadelik by SARS.";
     } else if (percent >= 80) {
       progressFillEl.classList.add("near-limit");
       resultEl.classList.add("result-warning");
-      statusLine = "U kom naby — ongeveer R" + (VAT_THRESHOLD - total).toLocaleString("af-ZA", { maximumFractionDigits: 0 }) + " onder die BTW-drempel van R2,3 miljoen.";
+      statusLine = "Jy kom naby — ongeveer R" + (VAT_THRESHOLD - total).toLocaleString("af-ZA", { maximumFractionDigits: 0 }) + " onder die BTW-drempel van R2,3 miljoen.";
     } else {
-      statusLine = "U is R" + (VAT_THRESHOLD - total).toLocaleString("af-ZA", { maximumFractionDigits: 0 }) + " onder die verpligte BTW-drempel van R2 300 000.";
+      statusLine = "Jy is R" + (VAT_THRESHOLD - total).toLocaleString("af-ZA", { maximumFractionDigits: 0 }) + " onder die verpligte BTW-drempel van R2 300 000.";
     }
 
     var recordLabel = recordsType === "estimate" ? "Dit is slegs 'n skatting." : "Dit is werklike rekords.";
@@ -853,7 +853,7 @@ function af(value) {
     var missing = [];
     if (!choiceSelect.value) missing.push("kies 'n aksie");
     if (!dateInput.value) missing.push("kies 'n teikendatum");
-    if (!ackCheckbox.checked) missing.push("bevestig dat u verstaan dat dit leiding is en nie 'n SARS-besluit nie");
+    if (!ackCheckbox.checked) missing.push("bevestig dat jy verstaan dat dit leiding is en nie 'n SARS-besluit nie");
 
     if (missing.length) {
       resultEl.innerHTML = "Voltooi asseblief die volgende: " + missing.join(", ") + ".";
@@ -870,7 +870,7 @@ function af(value) {
     });
 
     resultEl.innerHTML =
-      "U plan: <strong>" + actionLabels[choiceSelect.value] + "</strong> teen <strong>" + formattedDate + "</strong>.<br>" +
+      "Jou plan: <strong>" + actionLabels[choiceSelect.value] + "</strong> teen <strong>" + formattedDate + "</strong>.<br>" +
       reminderLabels[reminderValue];
     resultEl.classList.remove("hidden");
     resultEl.classList.remove("result-error");
@@ -896,7 +896,7 @@ function af(value) {
   var form = document.getElementById("compliance-map-form");
   if (form) form.addEventListener("submit", function (e) { e.preventDefault(); });
 
-  // These fragments finish the sentence "Omdat u ... en ..., is dit wat u
+  // These fragments finish the sentence "Omdat jy ... en ..., is dit wat jy
   // eerste moet ondersoek:" so each one ends in a verb (Afrikaans word order).
   var whereText = {
     home: "vanaf die huis of 'n erf handel",
@@ -913,25 +913,25 @@ function af(value) {
   };
 
   var setupText = {
-    sole: "U handel tans as 'n eenmansaak.",
-    partnership: "U handel tans as 'n vennootskap.",
-    company: "U het reeds 'n geregistreerde maatskappy.",
-    unsure: "U is nog nie seker van u besigheidstruktuur nie — dit is die moeite werd om vroeg te besleg, aangesien dit belasting en aanspreeklikheid raak.",
+    sole: "Jy handel tans as 'n eenmansaak.",
+    partnership: "Jy handel tans as 'n vennootskap.",
+    company: "Jy het reeds 'n geregistreerde maatskappy.",
+    unsure: "Jy is nog nie seker van jou besigheidstruktuur nie — dit is die moeite werd om vroeg te besleg, aangesien dit belasting en aanspreeklikheid raak.",
   };
 
   function buildRecommendations(where, what) {
     var recs = [];
 
-    if (where === "stall") recs.push("gaan u plaaslike munisipaliteit se vereistes vir 'n informele-handelspermit na");
-    else if (where === "home") recs.push("gaan na of u eiendom vir besigheidsgebruik gesoneer is");
-    else if (where === "shop") recs.push("gaan u munisipale besigheidslisensievereistes vir 'n vaste perseel na");
+    if (where === "stall") recs.push("gaan jou plaaslike munisipaliteit se vereistes vir 'n informele-handelspermit na");
+    else if (where === "home") recs.push("gaan na of jou eiendom vir besigheidsgebruik gesoneer is");
+    else if (where === "shop") recs.push("gaan jou munisipale besigheidslisensievereistes vir 'n vaste perseel na");
     else if (where === "online") recs.push("gaan die reëls van die Wet op Verbruikersbeskerming vir aanlyn- en afstandverkope na");
 
-    if (what === "food") recs.push("ondersoek u plaaslike Omgewingsgesondheidsdepartement se Sertifikaat van Aanvaarbaarheid (voedselveiligheidspermit)");
-    else if (what === "packaged") recs.push("gaan na of u etikettering voldoen aan die reëls van die Wet op Voedingsmiddels, Skoonheidsmiddels en Ontsmettingsmiddels, indien van toepassing");
-    else if (what === "services") recs.push("gaan na of u tipe diens sy eie professionele registrasie of lisensie benodig");
+    if (what === "food") recs.push("ondersoek jou plaaslike Omgewingsgesondheidsdepartement se Sertifikaat van Aanvaarbaarheid (voedselveiligheidspermit)");
+    else if (what === "packaged") recs.push("gaan na of jou etikettering voldoen aan die reëls van die Wet op Voedingsmiddels, Skoonheidsmiddels en Ontsmettingsmiddels, indien van toepassing");
+    else if (what === "services") recs.push("gaan na of jou tipe diens sy eie professionele registrasie of lisensie benodig");
 
-    recs.push("registreer u besigheid by CIPC as u dit nog nie gedoen het nie, aangesien dit alles anders onderlê");
+    recs.push("registreer jou besigheid by CIPC as jy dit nog nie gedoen het nie, aangesien dit alles anders onderlê");
 
     return recs;
   }
@@ -952,7 +952,7 @@ function af(value) {
     var recList = recs.map(function (r) { return "<li>" + r.charAt(0).toUpperCase() + r.slice(1) + "</li>"; }).join("");
 
     resultEl.innerHTML =
-      '<p class="compliance-map-summary">Omdat u ' + whereText[where] + " en " + whatText[what] + ", is dit wat u eerste moet ondersoek:</p>" +
+      '<p class="compliance-map-summary">Omdat jy ' + whereText[where] + " en " + whatText[what] + ", is dit wat jy eerste moet ondersoek:</p>" +
       '<ul class="compliance-map-list">' + recList + "</ul>" +
       '<span class="small">' + setupText[setup] + "</span>";
     resultEl.classList.remove("hidden");
@@ -1014,7 +1014,7 @@ initReflection({
   messageId: "brandAwareMessage",
   messageTextId: "brandAwareMessageText",
   badgeSectionId: "brandAwareBadgeSection",
-  readyMessage: "Mooi — dit is 'n duidelike prentjie van u handelsmerk.",
+  readyMessage: "Mooi — dit is 'n duidelike prentjie van jou handelsmerk.",
   storageKey: "brandAwareBadge",
 });
 
@@ -1032,7 +1032,7 @@ initReflection({
   messageId: "foundVoiceMessage",
   messageTextId: "foundVoiceMessageText",
   badgeSectionId: "foundVoiceBadgeSection",
-  readyMessage: "U het u slagspreuk gevind!",
+  readyMessage: "Jy het jou leuse gevind!",
   storageKey: "foundMyVoiceBadge",
 });
 
@@ -1081,7 +1081,7 @@ initReflection({
   messageId: "wellConnectedMessage",
   messageTextId: "wellConnectedMessageText",
   badgeSectionId: "wellConnectedBadgeSection",
-  readyMessage: "U het mense op wie u kan staatmaak.",
+  readyMessage: "Jy het mense op wie jy kan staatmaak.",
   storageKey: "wellConnectedBadge",
 });
 
@@ -1099,7 +1099,7 @@ initReflection({
   messageId: "structureCheckMessage",
   messageTextId: "structureCheckMessageText",
   badgeSectionId: "structureCheckBadgeSection",
-  readyMessage: "Goed — die moeite werd om te hersien soos u besigheid groei.",
+  readyMessage: "Goed — die moeite werd om te hersien soos jou besigheid groei.",
   storageKey: "structureCheckBadge",
 });
 
@@ -1117,7 +1117,7 @@ initReflection({
 
   if (!primaryInput || !secondaryInput || !messageEl || !messageTextEl || !badgeSection) return; // not on this page
 
-  var READY_MESSAGE = "U handelsmerkidentiteit is vasgestel.";
+  var READY_MESSAGE = "Jou handelsmerkidentiteit is vasgestel.";
   var STORAGE_KEY = "lookLockedInBadge";
   var hasInteracted = false;
 
@@ -1175,11 +1175,11 @@ initReflection({
   var CORRECT_ANSWERS = ["A", "C", "D", "E", "G"];
 
   var CORRECT_MESSAGE =
-    "Goed gedaan! U hoef nie by CIPC geregistreer te wees om as 'n " +
-    "Eenmansaak aan te meld nie. U het u persoonlike besonderhede, " +
+    "Goed gedaan! Jy hoef nie by CIPC geregistreer te wees om as 'n " +
+    "Eenmansaak aan te meld nie. Jy het jou persoonlike besonderhede, " +
     "Suid-Afrikaanse ID-verifikasie, 'n handelsadres en 'n Suid-Afrikaanse " +
-    "bankrekening in u eie naam nodig. U kan dan die kaartmasjien kies wat " +
-    "by u besigheid pas.";
+    "bankrekening in jou eie naam nodig. Jy kan dan die kaartmasjien kies wat " +
+    "by jou besigheid pas.";
 
   var INCORRECT_MESSAGE =
     "Probeer weer. Onthou: Yoco laat Eenmansake toe om aan te meld sonder " +
@@ -1267,15 +1267,15 @@ initReflection({
   if (form) form.addEventListener("submit", function (e) { e.preventDefault(); });
 
   var COMPLETED_MESSAGE =
-    "U het 'n kontakpunt vir befondsingsteun gevind. Om ongeregistreerd te " +
-    "wees, hoef u nie te keer om u opsies te verken nie. U volgende stap is " +
-    "om die organisasie te kontak en te vra of u besigheidsidee aan hul " +
+    "Jy het 'n kontakpunt vir befondsingsteun gevind. Om ongeregistreerd te " +
+    "wees, hoef jy nie te keer om jou opsies te verken nie. Jou volgende stap is " +
+    "om die organisasie te kontak en te vra of jou besigheidsidee aan hul " +
     "vereistes voldoen.";
 
   var INCOMPLETE_MESSAGE =
-    "Vul asseblief die organisasie, 'n spesifieke tak of kontakpunt, u dorp " +
+    "Vul asseblief die organisasie, 'n spesifieke tak of kontakpunt, jou dorp " +
     "of area, 'n kontakmetode, 'n foonnommer of e-posadres, en een vraag in " +
-    "wat u aan die befondser sou vra.";
+    "wat jy aan die befondser sou vra.";
 
   function showBadge() {
     if (badgeSection.classList.contains("earned")) return;
@@ -1350,7 +1350,7 @@ initReflection({
     var situation = document.querySelector('input[name="employerSituation"]:checked');
 
     if (!situation) {
-      resultEl.textContent = "Kies asseblief die stelling wat u besigheid vandag beskryf.";
+      resultEl.textContent = "Kies asseblief die stelling wat jou besigheid vandag beskryf.";
       resultEl.classList.remove("hidden");
       resultEl.classList.add("result-error");
       return;
@@ -1383,7 +1383,7 @@ initReflection({
       localStorage.setItem("fairEmployerBadge", "earned");
       showBadge();
     } else {
-      resultEl.textContent = "Voltooi asseblief die kontrolelys of aanstellingstelling voordat u stoor.";
+      resultEl.textContent = "Voltooi asseblief die kontrolelys of aanstellingstelling voordat jy stoor.";
       resultEl.classList.remove("hidden");
       resultEl.classList.add("result-error");
     }
@@ -1549,7 +1549,7 @@ initReflection({
 
   btn.addEventListener("click", function () {
     if (!taxStatus.value || !bbeeStatus.value || !qualifiesEME.value) {
-      resultEl.textContent = "Voltooi asseblief albei dokumentstatusse en u EME-kontrole.";
+      resultEl.textContent = "Voltooi asseblief albei dokumentstatusse en jou EME-kontrole.";
       resultEl.classList.remove("hidden");
       resultEl.classList.add("result-error");
       return;
@@ -1601,13 +1601,13 @@ initReflection({
     var hasStatement = purposeStatement.value.trim() !== "";
 
     if (!hasAtLeastOneYes || !hasStatement) {
-      resultEl.textContent = "Merk asseblief ten minste een tipe data wat u insamel en skryf 'n kort doelstelling.";
+      resultEl.textContent = "Merk asseblief ten minste een tipe data wat jy insamel en skryf 'n kort doelstelling.";
       resultEl.classList.remove("hidden");
       resultEl.classList.add("result-error");
       return;
     }
 
-    resultEl.textContent = 'Gestoor. "Ons gebruik u persoonlike inligting slegs om ' + purposeStatement.value.trim() + '"';
+    resultEl.textContent = 'Gestoor. "Ons gebruik jou persoonlike inligting slegs om ' + purposeStatement.value.trim() + '"';
     resultEl.classList.remove("hidden");
     resultEl.classList.remove("result-error");
     localStorage.setItem("dataResponsibleBadge", "earned");
@@ -1711,7 +1711,7 @@ initReflection({
     barEl.setAttribute("aria-valuenow", percent);
 
     if (total > 0 && checked === total) {
-      messageTextEl.textContent = "Mooi! U kombuisbasiese vereistes is gedek.";
+      messageTextEl.textContent = "Mooi! Jou kombuisbasiese vereistes is gedek.";
       messageEl.classList.add("is-visible");
       localStorage.setItem("kitchenReadyBadge", "earned");
       showBadge();
@@ -1837,7 +1837,7 @@ initReflection({
       showBadge();
     } else if (hasThermometerNo.checked) {
       if (!thermometerGetByDate.value || !thermometerCheckDate.value) {
-        resultEl.textContent = "Stel asseblief 'n datum om 'n termometer te kry en 'n datum vir u eerste kontrole.";
+        resultEl.textContent = "Stel asseblief 'n datum om 'n termometer te kry en 'n datum vir jou eerste kontrole.";
         resultEl.classList.remove("hidden");
         resultEl.classList.add("result-error");
         return;
@@ -1848,7 +1848,7 @@ initReflection({
       localStorage.setItem("coldChainBadge", "earned");
       showBadge();
     } else {
-      resultEl.textContent = "Kies asseblief of u 'n termometer het.";
+      resultEl.textContent = "Kies asseblief of jy 'n termometer het.";
       resultEl.classList.remove("hidden");
       resultEl.classList.add("result-error");
     }
@@ -1895,7 +1895,7 @@ initReflection({
     });
 
     if (!hasAtLeastOnePerson || !hasProofAnswer || !actionInput.value.trim()) {
-      resultEl.textContent = "Teken asseblief ten minste uself aan, merk of bewys beskikbaar is, en voeg een stap by.";
+      resultEl.textContent = "Teken asseblief ten minste jouself aan, merk of bewys beskikbaar is, en voeg een stap by.";
       resultEl.classList.remove("hidden");
       resultEl.classList.add("result-error");
       return;
@@ -2004,13 +2004,13 @@ initReflection({
     }
 
     if (hasNo && !actionInput.value.trim()) {
-      resultEl.textContent = "U het 'n item as nie-FIFO-voldoenend gemerk. Teken asseblief die stap aan wat u geneem het.";
+      resultEl.textContent = "Jy het 'n item as nie-FIFO-voldoenend gemerk. Teken asseblief die stap aan wat jy geneem het.";
       resultEl.classList.remove("hidden");
       resultEl.classList.add("result-error");
       return;
     }
 
-    resultEl.textContent = "Gestoor. " + (actionInput.value.trim() ? "Stap: " + actionInput.value.trim() : "U oudste voorraad is korrek geplaas.");
+    resultEl.textContent = "Gestoor. " + (actionInput.value.trim() ? "Stap: " + actionInput.value.trim() : "Jou oudste voorraad is korrek geplaas.");
     resultEl.classList.remove("hidden");
     resultEl.classList.remove("result-error");
     localStorage.setItem("fifoFocusedBadge", "earned");
@@ -2174,7 +2174,7 @@ initReflection({
 
   btn.addEventListener("click", function () {
     if (!perishableItem.value.trim() || !perishablePlan.value.trim() || !dryItem.value.trim() || !dryPlan.value.trim() || !supplierItemName.value.trim()) {
-      resultEl.textContent = "Voltooi asseblief albei items met 'n bestelplan, en noem 'n item vir u verskaffervraag.";
+      resultEl.textContent = "Voltooi asseblief albei items met 'n bestelplan, en noem 'n item vir jou verskaffervraag.";
       resultEl.classList.remove("hidden");
       resultEl.classList.add("result-error");
       return;
@@ -2229,7 +2229,7 @@ initReflection({
     checks.forEach(function (select) { if (!select.value) allChecked = false; });
 
     if (!allChecked || !nameInput.value.trim() || !productsInput.value.trim() || !hoursInput.value.trim()) {
-      resultEl.textContent = "Voltooi asseblief die kontrolelys en skryf u groetboodskapbesonderhede.";
+      resultEl.textContent = "Voltooi asseblief die kontrolelys en skryf jou groetboodskapbesonderhede.";
       resultEl.classList.remove("hidden");
       resultEl.classList.add("result-error");
       return;
@@ -2329,14 +2329,14 @@ initReflection({
 
   btn.addEventListener("click", function () {
     if (!platformSelected.value || !isLinked.value || !whatCustomersCanDo.value.trim()) {
-      resultEl.textContent = "Kies asseblief 'n platform, bevestig u koppelingstatus, en verduidelik wat klante sal kan doen.";
+      resultEl.textContent = "Kies asseblief 'n platform, bevestig jou koppelingstatus, en verduidelik wat kliënte sal kan doen.";
       resultEl.classList.remove("hidden");
       resultEl.classList.add("result-error");
       return;
     }
 
     if (isLinked.value !== "Yes" && !linkByDate.value) {
-      resultEl.textContent = "Stel asseblief 'n datum teen wanneer u u rekening sal koppel.";
+      resultEl.textContent = "Stel asseblief 'n datum teen wanneer jy jou rekening sal koppel.";
       resultEl.classList.remove("hidden");
       resultEl.classList.add("result-error");
       return;
@@ -2391,7 +2391,7 @@ initReflection({
     checks.forEach(function (select) { if (!select.value) allChecked = false; });
 
     if (!allChecked || !dishInput.value.trim() || !locationInput.value.trim() || !priceInput.value.trim()) {
-      resultEl.textContent = "Voltooi asseblief die fotokontrolelys en vul u onderskrifbesonderhede in.";
+      resultEl.textContent = "Voltooi asseblief die fotokontrolelys en vul jou onderskrifbesonderhede in.";
       resultEl.classList.remove("hidden");
       resultEl.classList.add("result-error");
       return;
@@ -2512,6 +2512,81 @@ initReflection({
     return names;
   }
 
+  // ---- Confetti behind the pop-up (skipped if the visitor prefers reduced motion) ----
+  function launchCompletionConfetti() {
+    try {
+      if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+      var canvas = document.createElement("canvas");
+      canvas.setAttribute("aria-hidden", "true");
+      canvas.style.cssText =
+        "position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:9999";
+      document.body.appendChild(canvas);
+
+      var ctx = canvas.getContext("2d");
+      if (!ctx) {
+        canvas.remove();
+        return;
+      }
+      var dpr = window.devicePixelRatio || 1;
+      canvas.width = window.innerWidth * dpr;
+      canvas.height = window.innerHeight * dpr;
+      ctx.scale(dpr, dpr);
+
+      var colors = ["#319966", "#1fc652", "#b7d64a", "#1daec6", "#f09c3a"];
+      var pieces = [];
+      for (var i = 0; i < 180; i++) {
+        pieces.push({
+          x: Math.random() * window.innerWidth,
+          y: -20 - Math.random() * window.innerHeight * 0.6,
+          w: 6 + Math.random() * 6,
+          h: 8 + Math.random() * 8,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          rotation: Math.random() * 360,
+          rotationSpeed: -8 + Math.random() * 16,
+          speedY: 2 + Math.random() * 3,
+          speedX: -1.5 + Math.random() * 3,
+          opacity: 1,
+        });
+      }
+
+      var startTime = null;
+      var duration = 4500;
+
+      function frame(timestamp) {
+        if (!startTime) startTime = timestamp;
+        var elapsed = timestamp - startTime;
+        ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+
+        pieces.forEach(function (p) {
+          p.x += p.speedX;
+          p.y += p.speedY;
+          p.rotation += p.rotationSpeed;
+          if (elapsed > duration * 0.6) {
+            p.opacity = Math.max(0, 1 - (elapsed - duration * 0.6) / (duration * 0.4));
+          }
+          ctx.save();
+          ctx.globalAlpha = p.opacity;
+          ctx.translate(p.x, p.y);
+          ctx.rotate((p.rotation * Math.PI) / 180);
+          ctx.fillStyle = p.color;
+          ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
+          ctx.restore();
+        });
+
+        if (elapsed < duration) {
+          requestAnimationFrame(frame);
+        } else {
+          canvas.remove();
+        }
+      }
+
+      requestAnimationFrame(frame);
+    } catch (e) {
+      /* confetti is decoration only - never let it block the pop-up */
+    }
+  }
+
   function showCongratsToast() {
     var badgeNames = getEarnedBadgeNames();
 
@@ -2533,7 +2608,7 @@ initReflection({
     modal.innerHTML =
       '<div class="page-complete-icon">🎉</div>' +
       "<h2>Goeie werk!</h2>" +
-      "<p>U het elke uitdaging op hierdie bladsy voltooi en die volgende verdien:</p>" +
+      "<p>Jy het elke uitdaging op hierdie bladsy voltooi en die volgende verdien:</p>" +
       badgeListHtml +
       '<button type="button" class="btn btn-primary page-complete-close">Gaan voort</button>';
 
@@ -2543,6 +2618,8 @@ initReflection({
     requestAnimationFrame(function () {
       overlay.classList.add("is-visible");
     });
+
+    launchCompletionConfetti();
 
     function dismiss() {
       overlay.classList.remove("is-visible");
@@ -2568,7 +2645,7 @@ initReflection({
 
     var note = document.createElement("p");
     note.className = "download-responses-note";
-    note.textContent = "Kry 'n PDF-kopie van alles wat u op hierdie bladsy ingevul het.";
+    note.textContent = "Kry 'n PDF-kopie van alles wat jy op hierdie bladsy ingevul het.";
 
     var btn = document.createElement("button");
     btn.type = "button";
@@ -2676,7 +2753,7 @@ initReflection({
       if (checked) {
         var lbl = checked.closest("label");
         var text = lbl ? lbl.textContent.trim() : name;
-        qa.push({ question: "Watter een het u gekies?", answer: text });
+        qa.push({ question: "Watter een het jy gekies?", answer: text });
       }
     });
 

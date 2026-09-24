@@ -41,20 +41,43 @@
           />
         </a>
 
-        <p class="story-page-title">’n Entrepreneurskap-suksesverhaal</p>
+        <p class="story-page-title">’n Ondernemerssuksesverhaal</p>
 
-        <select
-          class="lang-select"
-          aria-label="Kies taal"
-          onchange="if (this.value) window.location.href = this.value;"
+        <nav
+          class="nav-right nav-right--compact"
+          id="navRight"
+          aria-label="Primêre navigasie"
         >
-          <option value="" selected>🌐 Afrikaans</option>
-          <option disabled>🌐 isiZulu (binnekort beskikbaar)</option>
-          <option disabled>🌐 English</option> <!--value="https://vuka22.netlify.app"-->
-        </select>
-        <a class="btn btn-ghost btn-sm" href="../index.html"
+          <ul class="nav-links">
+            <li><a href="../index.html">Tuis</a></li>
+            <li><a href="../index.html#about">Oor Vuka</a></li>
+            <li><a href="../index.html#modules">Modules</a></li>
+            <li><a href="../index.html#faq">Gereelde Vrae</a></li>
+          </ul>
+          <select
+            class="lang-select"
+            aria-label="Kies taal"
+            onchange="if (this.value) window.location.href = this.value;"
+          >
+            <option value="" selected>🌐 Afrikaans</option>
+            <option disabled>🌐 isiZulu (binnekort beskikbaar)</option>
+            <option disabled>🌐 English</option> <!--value="https://vuka22.netlify.app"-->
+          </select>
+        </nav>
+
+        <a class="btn btn-ghost btn-sm header-back-btn" href="../index.html"
           >← Gaan terug na Tuisblad</a
         >
+
+        <button
+          class="burger"
+          id="burgerBtn"
+          aria-label="Maak kieslys oop"
+          aria-expanded="false"
+          aria-controls="navRight"
+        >
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </header>
 
@@ -71,7 +94,7 @@
 
             <span>•</span>
 
-            <span>Entrepreneurskapverhaal</span>
+            <span>Ondernemersverhaal</span>
 
             <span>•</span>
 
@@ -81,7 +104,7 @@
           <p class="intro">
             Wat in 2009 as ’n manier om te oorleef begin het nadat sy haar werk
             verloor het, het gegroei tot ’n florerende voedsel- en
-            gebeurtenisbestuursbesigheid.
+            geleentheidsbestuursbesigheid.
           </p>
         </div>
 
@@ -163,7 +186,7 @@
         <article class="article-content">
           <p class="article-opening">
             Vir Buyiswa, die stigter van <strong>Iziko African Cuizine</strong>,
-            was entrepreneurskap nooit deel van ’n sorgvuldig beplande
+            was ondernemerskap nooit deel van ’n sorgvuldig beplande
             loopbaanpad nie. In plaas daarvan is dit gebore uit noodsaaklikheid,
             vasberadenheid en ’n bereidwilligheid om geleenthede raak te sien
             wanneer hulle opduik.
@@ -190,8 +213,7 @@
 
             <p>
               Op skool was Buyiswa deurgaans een van die toppresteerders in haar
-              graad. Sonder ’n mentor om haar te lei, het sy egter gedurende
-              Graad 11 en 12 begin fokus verloor. Ten spyte hiervan het sy nooit
+              graad. Sonder ’n mentor om haar te lei, het sy egter gedurende Graad 11 en 12 haar fokus begin verloor. Ten spyte hiervan het sy nooit
               ’n jaar gedruip nie.
             </p>
           </section>
@@ -201,8 +223,7 @@
             Rekenaarwetenskap te studeer. Finansiële probleme en die druk van
             die kursus het haar egter uiteindelik daartoe gelei om die
             universiteit te verlaat. Sy het ook die uitdaging ervaar om nie
-            finansiële ondersteuning deur die Tertiary Education Fund of South
-            Africa (TEFSA) te ontvang nie, wat tot haar besluit bygedra het om
+            finansiële ondersteuning deur die Tersiêre Onderwysfonds van Suid-Afrika (TEFSA) te ontvang nie, wat tot haar besluit bygedra het om
             haar studies te staak.
           </p>
 
@@ -222,7 +243,7 @@
             Deur die hulpbronne tot haar beskikking te gebruik, het Buyiswa ’n
             internetkafee- en drukbesigheid begin. Destyds het sy geen idee
             gehad dat hierdie tydelike oplossing uiteindelik die grondslag van
-            haar entrepreneursreis sou word nie.
+            haar ondernemersreis sou word nie.
           </p>
 
           <h2>Die Vraag na Kos Ontdek</h2>
@@ -253,7 +274,7 @@
 
           <p>
             Die groei het nie oornag plaasgevind nie. Dit is gedryf deur na
-            kliënte te luister, te erken wat mense wou hê en voortdurend haar
+            kliënte te luister, te herken wat mense wou hê en voortdurend haar
             dienste aan te pas.
           </p>
 
@@ -286,7 +307,7 @@
           <p>
             Vandag het die besigheid uitgebrei tot meer as net die verskaffing
             van maaltye. Dit het ontwikkel tot ’n voedsel- en
-            gebeurtenisbestuursmaatskappy, met Buyiswa wat steeds na nuwe
+            geleentheidsbestuursmaatskappy, met Buyiswa wat steeds na nuwe
             maniere soek om die mark te betree en die besigheid te laat groei.
           </p>
 
@@ -356,8 +377,7 @@
 
           <p>
             Sy het die internet gebruik, kleinbesigheidswerkswinkels bygewoon en
-            van SEDA se dienste gebruik gemaak toe sy haar besigheid formaliseer
-            het. Sy het ook besighede wat op ’n groter skaal bedryf word,
+            van SEDA se dienste gebruik gemaak toe sy haar besigheid geformaliseer het. Sy het ook besighede wat op ’n groter skaal bedryf word,
             dopgehou en geleer uit wat hulle gedoen het.
           </p>
 
@@ -376,12 +396,12 @@
 
           <p>
             Haar ervaring het haar geleer dat daar geen punt is waarop ’n
-            entrepreneur kan beweer dat hy of sy alles van besigheid weet nie.
+            ondernemer kan beweer dat hy of sy alles van besigheid weet nie.
           </p>
 
           <blockquote>
             "Jy kan nooit sê jy ken die mark nie," verduidelik sy. "Dit
-            verander, en so verander klante se eienskappe en die vraag na sekere
+            verander, en so verander kliënte se eienskappe en die vraag na sekere
             dinge."
           </blockquote>
 
@@ -390,13 +410,13 @@
           <p>
             Hoewel Buyiswa die algemene proses om haar besigheid te formaliseer
             as relatief maklik ervaar het, erken sy dat daar baie dinge was wat
-            sy aanvanklik nie van bedryf binne die voedselbedryf geweet het nie.
+            sy aanvanklik nie oor werk in die voedselbedryf geweet het nie.
           </p>
 
           <p>
             Van die vereistes wat sy teëgekom het, was gesondheidsertifikate,
             besigheidslisensies, Sertifikate van Aanvaarbaarheid en permitte wat
-            nodig is om by sekere geleenthede te bedryf.
+            nodig is om by sekere geleenthede te handel.
           </p>
 
           <p>
@@ -406,8 +426,7 @@
           </p>
 
           <p>
-            Vir aspirant-voedselentrepreneurs beklemtoon Buyiswa die
-            belangrikheid van voedselveiligheid sterk.
+            Vir voornemende voedselondernemers beklemtoon Buyiswa nadruklik die belangrikheid van voedselveiligheid.
           </p>
 
           <blockquote>
@@ -436,7 +455,7 @@
             leer.
           </p>
 
-          <p>Sy glo ook dat entrepreneurs hulself moet onderskei.</p>
+          <p>Sy glo ook dat ondernemers hulself moet onderskei.</p>
 
           <blockquote>
             "Almal verkoop kos, wees anders en uniek," adviseer sy. "Het daardie
@@ -454,7 +473,7 @@
           </blockquote>
 
           <section id="advice">
-            <h2>Advies vir Aspirant-Voedselentrepreneurs</h2>
+            <h2>Advies vir Voornemende Voedselondernemers</h2>
 
             <p>
               Vir mense wat kosstalletjies, tuisbesighede of klein
@@ -468,13 +487,13 @@
             </blockquote>
 
             <p>
-              Sy moedig aspirant-entrepreneurs aan om te verstaan wat hul
+              Sy moedig voornemende ondernemers aan om te verstaan wat hul
               kliënte wil hê en dan maniere te vind om daardie diens anders as
               hul mededingers te lewer.
             </p>
 
             <p>
-              Sy glo ook dat entrepreneurs nie moet toelaat dat terugslae hulle
+              Sy glo ook dat ondernemers nie moet toelaat dat terugslae hulle
               oortuig dat hulle misluk het nie.
             </p>
 
@@ -492,7 +511,7 @@
             <h2>Wat Voorlê</h2>
 
             <p>
-              Buyiswa se entrepreneursreis is steeds besig om te ontwikkel.
+              Buyiswa se ondernemersreis is steeds besig om te ontwikkel.
               Hoewel Iziko African Cuizine reeds aansienlik gegroei het sedert
               sy beginjare, glo sy dat daar steeds ruimte vir uitbreiding is.
             </p>
@@ -517,9 +536,9 @@
             </p>
 
             <p>
-              Haar verhaal toon dat entrepreneurskap nie altyd met ’n perfekte
+              Haar verhaal toon dat ondernemerskap nie altyd met ’n perfekte
               idee begin nie. Soms begin dit met noodsaaklikheid. ’n
-              Entrepreneur mag met een diens begin, ’n ander geleentheid ontdek
+              Ondernemer mag met een diens begin, ’n ander geleentheid ontdek
               en geleidelik iets veel groter bou as wat hulle oorspronklik
               voorgestel het.
             </p>
@@ -535,7 +554,7 @@
             <p>
               Van ’n internetkafee en drukdiens wat uit noodsaaklikheid ontstaan
               het tot Iziko African Cuizine, ’n groeiende voedsel- en
-              gebeurtenisbestuursmaatskappy, is Buyiswa se verhaal uiteindelik
+              geleentheidsbestuursmaatskappy, is Buyiswa se verhaal uiteindelik
               een van veerkragtigheid, aanpasbaarheid en voortdurende leer.
             </p>
 
@@ -611,6 +630,18 @@
           });
         });
       }
+    </script>
+    <script>
+      /* Mobile nav toggle (same behaviour as main.js on the journey pages) */
+      (function () {
+        const burgerBtn = document.getElementById("burgerBtn");
+        const navRight = document.getElementById("navRight");
+        if (!burgerBtn || !navRight) return;
+        burgerBtn.addEventListener("click", () => {
+          const isOpen = navRight.classList.toggle("open");
+          burgerBtn.setAttribute("aria-expanded", String(isOpen));
+        });
+      })();
     </script>
   </body>
 </html>

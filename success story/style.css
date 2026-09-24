@@ -34,7 +34,6 @@ body {
 
 header {
     background: var(--dark);
-    padding: 18px 6%;
     border-bottom: 5px solid var(--lime);
 }
 
@@ -63,18 +62,6 @@ header {
   color: var(--white);
   text-align: center;
   flex: 1 1 auto;
-}
-
-nav {
-    color: white;
-    font-size: 2.5rem;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    text-align: center;
-}
-
-nav span {
-    color: var(--lime);
 }
 
 .article-hero {
@@ -301,7 +288,7 @@ nav span {
 }
 
 .article-carousel::before {
-    content: "IZIKO AFRICAN CUISINE";
+    content: "IZIKO AFRICAN CUIZINE";
 
     display: block;
 
@@ -428,14 +415,6 @@ strong {
 
 @media (max-width: 700px) {
 
-    header {
-        padding: 15px 20px;
-    }
-
-    nav {
-        font-size: 1.15rem;
-    }
-
     .story-page-title {
         display: none;
     }
@@ -496,4 +475,20 @@ strong {
 .hero-content {
     max-width: 760px;
     margin: 0 auto;
+}
+
+/* --------------------------------------------------------------------------
+   Header / burger menu
+   Base + mobile (max-width: 640px) rules live in ../css/vuka_styles_redesigned.css.
+   -------------------------------------------------------------------------- */
+
+/* desktop: home links only appear inside the burger menu */
+.nav-right--compact .nav-links {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .header-back-btn {
+    display: none;
+  }
 }
