@@ -4,7 +4,7 @@
 // Bump CACHE_NAME whenever you deploy changes, so old caches get replaced.
 // ==========================================================================
 
-const CACHE_NAME = "vuka-cache-v7";
+const CACHE_NAME = "vuka-cache-v8";
 
 // Every page and asset in the site — cached immediately on install so the
 // whole site is available offline, not just pages a visitor has opened.
